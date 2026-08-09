@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+/*
+ * Everything below lives inside a cascade layer on purpose.
+ * Tailwind v4 emits its utilities inside `@layer utilities`, and unlayered
+ * author CSS outranks every layer — so an unlayered `* { margin: 0 }` reset
+ * silently defeats `mx-auto`, `px-*` and `py-*` site-wide.
+ */
+
+@layer base {
+  :root {
+    --color-dark-near-black: #0c0d10;
+    --color-charcoal: #14161b;
+    --color-charcoal-card: #1a1d24;
+    --color-text-off-white: #f3f4f6;
+    --color-text-muted: #9ca3af;
+    --color-platinum: #eae4ea;
+    --color-accent-emerald: #10b981;
+    --font-headline: 'Playfair Display', Georgia, serif;
+    --font-ui: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-dark-near-black);
+    color: var(--color-text-off-white);
+    font-family: var(--font-ui);
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: var(--color-dark-near-black);
+    color: var(--color-text-off-white);
+    font-family: var(--font-ui);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-dark-near-black);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1f232d;
+    border-radius: 4px;
+    border: 1px solid rgba(234, 228, 234, 0.1);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2a2f3a;
+  }
+}
+
+@layer components {
+  /* Typography */
+  .font-headline {
+    font-family: var(--font-headline);
+  }
+
+  .font-ui {
+    font-family: var(--font-ui);
+  }
+
+  .text-gradient-silver {
+    background: linear-gradient(135deg, #f8fafc 0%, #cbd5e1 50%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Section eyebrow label — one treatment site-wide */
+  .eyebrow {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  /* Solid charcoal panels — no blur, no glassmorphism */
+  .panel {
+    background: var(--color-charcoal);
+    border: 1px solid rgba(234, 228, 234, 0.1);
+    border-radius: 16px;
+  }
+
+  .panel-hover {
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+  }
+
+  .panel-hover:hover {
+    border-color: rgba(234, 228, 234, 0.22);
+    background: var(--color-charcoal-card);
+  }
+
+  /* Buttons — one shared geometry, two variants, three sizes */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 9999px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .btn-sm {
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 11px;
+    gap: 0.5rem;
+  }
+
+  .btn-lg {
+    height: 3.5rem;
+    padding: 0 2.25rem;
+    font-size: 13px;
+  }
+
+  .btn-primary {
+    background: var(--color-accent-emerald);
+    color: #07100c;
+    border: 1px solid var(--color-accent-emerald);
+  }
+
+  .btn-primary:hover {
+    background: #34d399;
+    border-color: #34d399;
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--color-text-off-white);
+    border: 1px solid rgba(234, 228, 234, 0.25);
+  }
+
+  .btn-secondary:hover {
+    border-color: rgba(234, 228, 234, 0.5);
+    background: rgba(234, 228, 234, 0.05);
+  }
+
+  /* Horizontal ticker */
+  .animate-ticker {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: ticker 45s linear infinite;
+  }
+
+  .animate-ticker:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @layer components {
+    .animate-ticker {
+      animation: none;
+    }
+  }
+  @layer base {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}

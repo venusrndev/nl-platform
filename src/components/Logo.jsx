@@ -5,13 +5,11 @@ import React from 'react';
  * logo file lands — the surrounding lockup geometry stays the same.
  */
 export const NLMark = ({ size = "normal" }) => (
-  <span
-    className={`font-headline font-bold leading-none text-[#EAE4EA] select-none ${
-      size === "large" ? "text-4xl" : "text-3xl"
-    }`}
-  >
-    NL
-  </span>
+  <img
+    src="/logo.svg"
+    alt="Next League Logo"
+    className={`${size === "large" ? "w-10 h-10" : "w-8 h-8"} object-contain`}
+  />
 );
 
 export const BrandLockup = ({ layout = "horizontal", size = "normal" }) => {

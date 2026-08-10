@@ -6,7 +6,7 @@ import React from 'react';
  */
 export const NLMark = ({ size = "normal" }) => (
   <img
-    src="/logo.svg"
+    src="/logo.png"
     alt="Next League Logo"
     className={`${size === "large" ? "w-10 h-10" : "w-8 h-8"} object-contain`}
   />

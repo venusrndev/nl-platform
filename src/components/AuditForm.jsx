@@ -31,7 +31,7 @@ export const AuditForm = () => {
           {/* Form */}
           <div className="lg:col-span-7 panel p-8 sm:p-10">
             <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide border-b border-white/10 pb-4 mb-6 text-center">
-              Tell Us About Your Business
+              To Get Started
             </h3>
             
             <iframe

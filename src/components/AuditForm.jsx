@@ -1,49 +1,15 @@
-import React, { useState } from 'react';
-
-const FIELDS = [
-  {
-    name: 'fullName',
-    type: 'text',
-    label: 'Your name',
-    placeholder: 'Marcus Vance',
-    autoComplete: 'name',
-  },
-  {
-    name: 'businessName',
-    type: 'text',
-    label: 'Business name',
-    placeholder: 'Vance Plumbing & Drain',
-    autoComplete: 'organization',
-  },
-  {
-    name: 'phone',
-    type: 'tel',
-    label: 'Where should we text you?',
-    placeholder: '(951) 203-1294',
-    autoComplete: 'tel',
-  },
-  {
-    name: 'email',
-    type: 'email',
-    label: 'Email for the written audit',
-    placeholder: 'marcus@vanceplumbing.com',
-    autoComplete: 'email',
-  },
-];
+import React, { useEffect } from 'react';
 
 export const AuditForm = () => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    businessName: '',
-    phone: '',
-    email: '',
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+  useEffect(() => {
+    // Add GHL script dynamically when component mounts
+    if (!document.querySelector('script[src="https://api.nextleaguemarketing.com/js/form_embed.js"]')) {
+      const script = document.createElement('script');
+      script.src = "https://api.nextleaguemarketing.com/js/form_embed.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
 
   return (
     <section id="audit-form" className="py-28 bg-[#0e1014] border-t border-white/10">
@@ -64,68 +30,27 @@ export const AuditForm = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-6xl mx-auto">
           {/* Form */}
           <div className="lg:col-span-7 panel p-8 sm:p-10">
-            {submitted ? (
-              <div className="text-center py-12 space-y-4">
-                <div className="w-14 h-14 border border-emerald-500/50 rounded-full flex items-center justify-center mx-auto text-emerald-400 text-xl">
-                  ✓
-                </div>
-                <h3 className="font-headline text-2xl font-bold text-[#f3f4f6]">
-                  We're on it
-                </h3>
-                <p className="font-ui text-sm text-slate-300 font-light max-w-md mx-auto leading-relaxed">
-                  You'll hear from us at{' '}
-                  <strong className="text-[#f3f4f6] font-semibold">
-                    {formData.phone || 'the number you gave us'}
-                  </strong>
-                  {' '}shortly. If you'd rather not wait, call{' '}
-                  <a href="tel:+19512031294" className="text-emerald-400 hover:text-emerald-300">
-                    (951) 203-1294
-                  </a>
-                  .
-                </p>
-                <button
-                  onClick={() => setSubmitted(false)}
-                  className="btn btn-secondary mt-4"
-                >
-                  Send another
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                {FIELDS.map((field) => (
-                  <div key={field.name}>
-                    <label
-                      htmlFor={field.name}
-                      className="block text-[11px] font-bold uppercase tracking-[0.15em] text-slate-400 mb-2"
-                    >
-                      {field.label}
-                    </label>
-                    <input
-                      id={field.name}
-                      name={field.name}
-                      type={field.type}
-                      autoComplete={field.autoComplete}
-                      required
-                      placeholder={field.placeholder}
-                      value={formData[field.name]}
-                      onChange={(e) =>
-                        setFormData({ ...formData, [field.name]: e.target.value })
-                      }
-                      className="w-full bg-[#0c0d10] border border-white/15 rounded-xl px-4 py-3.5 text-sm text-[#f3f4f6] placeholder-slate-600 focus:outline-none focus:border-emerald-500 transition-colors"
-                    />
-                  </div>
-                ))}
-
-                <button type="submit" className="btn btn-primary w-full">
-                  Get my free audit
-                </button>
-
-                <p className="font-ui text-[11px] text-slate-500 font-light text-center leading-relaxed">
-                  We reply the same way we'll set up for you — fast, and from a
-                  real person.
-                </p>
-              </form>
-            )}
+            <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide border-b border-white/10 pb-4 mb-6 text-center">
+              Tell Us About Your Business
+            </h3>
+            
+            <iframe
+              src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
+              style={{ width: '100%', height: '100%', border: 'none', borderRadius: '8px' }}
+              id="inline-LxswiBnuIN5djToi78xC" 
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="nlm site form"
+              data-height="834"
+              data-layout-iframe-id="inline-LxswiBnuIN5djToi78xC"
+              data-form-id="LxswiBnuIN5djToi78xC"
+              title="nlm site form"
+            />
           </div>
 
           {/* Contact block */}

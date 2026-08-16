@@ -36,7 +36,7 @@ export const AuditForm = () => {
             
             <iframe
               src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
-              style={{ width: '100%', height: '100%', border: 'none', borderRadius: '8px' }}
+              style={{ width: '100%', height: '100%', border: 'none', borderRadius: '8px', backgroundColor: 'transparent', colorScheme: 'dark' }}
               id="inline-LxswiBnuIN5djToi78xC" 
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"

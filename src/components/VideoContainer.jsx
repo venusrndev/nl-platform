@@ -26,7 +26,7 @@ export const VideoContainer = ({
         loop
         muted
         playsInline
-        className="w-full h-full object-cover relative z-10"
+        className="w-full h-full object-cover relative z-10 pointer-events-none"
         onCanPlay={(e) => e.target.play()}
       />
 

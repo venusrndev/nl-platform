@@ -8,7 +8,7 @@ import FreeAuditPage from './pages/FreeAuditPage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0c0d10] text-[#f3f4f6] font-ui selection:bg-emerald-500 selection:text-white">
+    <div className="min-h-screen w-full overflow-x-hidden bg-[#0c0d10] text-[#f3f4f6] font-ui selection:bg-emerald-500 selection:text-white">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/missed-call-text-back" element={<MissedCallTextBackPage />} />

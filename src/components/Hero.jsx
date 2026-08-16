@@ -22,7 +22,7 @@ export const Hero = () => {
           loop
           muted
           playsInline
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-full min-h-full object-cover object-center"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-full min-h-full object-cover object-center pointer-events-none"
           onCanPlay={(e) => e.target.play()}
         />
 

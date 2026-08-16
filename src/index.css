@@ -34,7 +34,6 @@
   }
 
   body {
-    overflow-x: hidden;
     background-color: var(--color-dark-near-black);
     color: var(--color-text-off-white);
     font-family: var(--font-ui);
@@ -183,3 +182,45 @@
     }
   }
 }
+
+/* Mobile & WebKit GHL Form Overrides */
+iframe[src*="nextleaguemarketing.com"],
+iframe[id*="LxswiBnuIN5djToi78xC"],
+.ghl-form-container,
+.ghl-form-embed {
+  background-color: transparent !important;
+  background: transparent !important;
+  color-scheme: dark;
+}
+
+/* Mobile input defaults & tap highlight resets */
+input, select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  accent-color: #10b981;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent mobile browser autofill blue background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #14161b inset !important;
+  -webkit-text-fill-color: #f3f4f6 !important;
+  caret-color: #10b981 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+

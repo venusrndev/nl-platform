@@ -28,34 +28,44 @@ export const AuditForm = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-6xl mx-auto">
-          {/* Form */}
-          <div className="lg:col-span-7 panel p-8 sm:p-10">
+          {/* Form Container */}
+          <div className="lg:col-span-7 panel p-6 sm:p-10 bg-[#14161b] text-[#f3f4f6] overflow-hidden">
             <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide border-b border-white/10 pb-4 mb-6 text-center">
               To Get Started
             </h3>
             
-            <iframe
-              src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
-              style={{ width: '100%', height: '100%', border: 'none', borderRadius: '8px', backgroundColor: 'transparent', colorScheme: 'dark' }}
-              id="inline-LxswiBnuIN5djToi78xC" 
-              data-layout="{'id':'INLINE'}"
-              data-trigger-type="alwaysShow"
-              data-trigger-value=""
-              data-activation-type="alwaysActivated"
-              data-activation-value=""
-              data-deactivation-type="neverDeactivate"
-              data-deactivation-value=""
-              data-form-name="nlm site form"
-              data-height="834"
-              data-layout-iframe-id="inline-LxswiBnuIN5djToi78xC"
-              data-form-id="LxswiBnuIN5djToi78xC"
-              title="nlm site form"
-            />
+            <div className="w-full min-h-[850px] bg-[#14161b] rounded-lg overflow-hidden">
+              <iframe
+                src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
+                style={{
+                  width: '100%',
+                  minHeight: '850px',
+                  height: '100%',
+                  border: 'none',
+                  borderRadius: '8px',
+                  backgroundColor: '#14161b',
+                  colorScheme: 'dark'
+                }}
+                id="inline-LxswiBnuIN5djToi78xC" 
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="nlm site form"
+                data-height="834"
+                data-layout-iframe-id="inline-LxswiBnuIN5djToi78xC"
+                data-form-id="LxswiBnuIN5djToi78xC"
+                title="Strategy Audit Form"
+              />
+            </div>
           </div>
 
           {/* Contact block */}
           <div className="lg:col-span-5">
-            <div className="panel p-8 space-y-6">
+            <div className="panel p-8 space-y-6 bg-[#14161b]">
               <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide border-b border-white/10 pb-4 text-center">
                 Rather just talk?
               </h3>

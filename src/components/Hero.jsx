@@ -12,7 +12,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden bg-[#0c0d10] text-[#f3f4f6]">
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center bg-[#0c0d10] text-[#f3f4f6]">
       {/* Full-Bleed Background Video — the one showstopping element */}
       <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
         <video
@@ -42,9 +42,9 @@ export const Hero = () => {
         </div>
 
         {/* Headline */}
-        <h1 className="font-headline text-5xl sm:text-7xl md:text-8xl font-black tracking-tight leading-[1.02] uppercase text-[#f3f4f6] mb-7 text-center w-full mx-auto">
+        <h1 className="font-headline text-5xl sm:text-7xl md:text-8xl font-black tracking-tight leading-[1.1] uppercase text-[#f3f4f6] mb-7 text-center w-full mx-auto" style={{ paddingBottom: '0.15em' }}>
           Missed call.<br />
-          <span className="text-gradient-silver inline-block">Lost job.</span>
+          <span className="text-gradient-silver inline-block" style={{ paddingBottom: '0.15em' }}>Lost job.</span>
         </h1>
 
         {/* Subheadline: problem → cost → fix */}

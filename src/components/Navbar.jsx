@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { BrandLockup } from './Logo';
 
 const NAV_LINKS = [
-  { href: '#problem-solution', label: 'The Problem' },
-  { href: '#mechanics', label: 'Where Leads Leak' },
-  { href: '#automation', label: 'The System' },
-  { href: '#demo', label: 'See It Live' },
+  { href: '/#problem-solution', label: 'The Problem' },
+  { href: '/#mechanics', label: 'Where Leads Leak' },
+  { href: '/#automation', label: 'The System' },
+  { href: '/#demo', label: 'See It Live' },
 ];
 
 const PhoneIcon = ({ className = "w-3.5 h-3.5" }) => (
@@ -37,9 +38,9 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-12">
           {/* Brand Logo */}
-          <a href="#" className="focus:outline-none flex-shrink-0">
+          <Link to="/" className="focus:outline-none flex-shrink-0">
             <BrandLockup />
-          </a>
+          </Link>
 
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-8 text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-300">
@@ -57,9 +58,9 @@ export const Navbar = () => {
               <span>(951) 203-1294</span>
             </a>
 
-            <a href="#audit-form" className="btn btn-sm btn-primary">
+            <Link to="/free-audit" className="btn btn-sm btn-primary">
               Free Audit
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -108,13 +109,13 @@ export const Navbar = () => {
                 <PhoneIcon />
                 <span>(951) 203-1294</span>
               </a>
-              <a
-                href="#audit-form"
+              <Link
+                to="/free-audit"
                 onClick={() => setMobileMenuOpen(false)}
                 className="btn btn-primary w-full"
               >
                 Get My Free Audit
-              </a>
+              </Link>
             </div>
           </div>
         )}

@@ -193,8 +193,10 @@ iframe[id*="LxswiBnuIN5djToi78xC"],
   color-scheme: dark;
 }
 
-/* Mobile input defaults & explicit site-wide dark form styling */
-input, select, textarea {
+/* Mobile text/select/textarea defaults & explicit site-wide dark form styling */
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -203,13 +205,35 @@ input, select, textarea {
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   border-radius: 8px !important;
   caret-color: #10b981 !important; /* Emerald cursor matching brand palette */
-  accent-color: #10b981;
 }
 
-input:focus, select:focus, textarea:focus {
+input:not([type="checkbox"]):not([type="radio"]):focus,
+select:focus,
+textarea:focus {
   outline: none !important;
   border-color: #10b981 !important;
   box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25) !important;
+}
+
+/* Checkbox & Radio native appearance restoration with Emerald accent */
+input[type="checkbox"] {
+  -webkit-appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  appearance: checkbox !important;
+  accent-color: #10b981 !important;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  -webkit-appearance: radio !important;
+  -moz-appearance: radio !important;
+  appearance: radio !important;
+  accent-color: #10b981 !important;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+  cursor: pointer;
 }
 
 /* High-contrast placeholder text */

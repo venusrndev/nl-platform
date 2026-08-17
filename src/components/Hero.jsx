@@ -37,7 +37,7 @@ export const Hero = () => {
         <div className="inline-flex items-center justify-center gap-2.5 mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
           <span className="eyebrow text-[#EAE4EA]/70">
-            Riverside, CA · For Local Service Businesses
+            Riverside, CA · For HVAC, Plumbing & Electrical Contractors
           </span>
         </div>
 
@@ -49,9 +49,10 @@ export const Hero = () => {
 
         {/* Subheadline: problem → cost → fix */}
         <p className="font-ui text-base sm:text-xl font-light text-slate-300 max-w-2xl text-center w-full mx-auto mb-10 leading-relaxed">
-          One in four calls to a local business goes unanswered. Those callers
+          One in four calls to a contractor goes unanswered. Those callers
           don't leave a voicemail — they dial the next name on the list. We make
-          sure someone always answers, in 15 seconds, even when you can't.
+          sure someone always answers in 15 seconds, even when you're under a
+          sink or up a ladder.
         </p>
 
         {/* Matched CTA pair */}

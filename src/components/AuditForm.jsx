@@ -22,8 +22,9 @@ export const AuditForm = () => {
           </h2>
           <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto">
             In 15 minutes we'll show you how many calls went unanswered last
-            month, how long your leads actually wait for a reply, and what it
-            would take to close that gap. No contract, no obligation.
+            month, how long your leads actually wait for a reply, and how many
+            past customers are sitting in your phone waiting to be asked. No
+            contract, no obligation, no slide deck.
           </p>
         </div>
 

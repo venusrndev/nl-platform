@@ -4,8 +4,14 @@ const ITEMS = [
   'Responds in 15 seconds',
   'Missed-call text-back',
   '2-way SMS inbox',
-  'Riverside, CA',
+  'HVAC',
+  'Plumbing',
+  'Electrical',
+  'Roofing',
+  'Dormant list reactivation',
   'Automated review requests',
+  'A2P compliance handled',
+  'Riverside, CA',
   'Speed-to-lead system',
 ];
 

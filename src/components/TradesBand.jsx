@@ -1,0 +1,21 @@
+import React from 'react';
+
+export const TradesBand = () => {
+  return (
+    <section id="trades-band" className="py-12 sm:py-16 bg-[#14161b] border-y border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+        <div className="font-ui text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-[#f3f4f6] mb-4 w-full">
+          BUILT FOR THE TRADES
+        </div>
+        <div className="font-ui text-lg sm:text-xl font-light text-slate-300 tracking-wide mb-3 text-center w-full">
+          HVAC · Plumbing · Electrical · Roofing
+        </div>
+        <div className="font-ui text-sm text-slate-400 font-light italic text-center w-full">
+          If your phone is your cash register, this is for you.
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TradesBand;

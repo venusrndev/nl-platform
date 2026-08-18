@@ -30,7 +30,7 @@ export const AuditForm = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-6xl mx-auto">
           {/* Form Container */}
-          <div className="lg:col-span-7 panel p-6 sm:p-10 bg-[#14161b] text-[#f3f4f6] overflow-hidden">
+          <div className="lg:col-span-7 p-6 sm:p-10 bg-[#14161b] text-[#f3f4f6] overflow-hidden rounded-2xl">
             <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide border-b border-white/10 pb-4 mb-6 text-center">
               To Get Started
             </h3>

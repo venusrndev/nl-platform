@@ -29,9 +29,9 @@ export const AuditForm = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-6xl mx-auto">
-          {/* Form Container */}
+          {/* Form Container — no border */}
           <div className="lg:col-span-7 p-6 sm:p-10 bg-[#14161b] text-[#f3f4f6] overflow-hidden rounded-2xl">
-            <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide border-b border-white/10 pb-4 mb-6 text-center">
+            <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide pb-4 mb-6 text-center">
               To Get Started
             </h3>
             
@@ -64,17 +64,17 @@ export const AuditForm = () => {
             </div>
           </div>
 
-          {/* Contact block */}
+          {/* Contact block — no border */}
           <div className="lg:col-span-5">
-            <div className="panel p-8 space-y-6 bg-[#14161b]">
-              <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide border-b border-white/10 pb-4 text-center">
+            <div className="p-8 space-y-6 bg-[#14161b] rounded-2xl">
+              <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide pb-4 text-center">
                 Rather just talk?
               </h3>
 
               <div className="space-y-4">
                 <a
                   href="tel:+19512031294"
-                  className="flex items-start gap-4 p-4 rounded-xl bg-[#0c0d10] border border-white/10 hover:border-emerald-500/50 transition-colors group"
+                  className="flex items-start gap-4 p-4 rounded-xl bg-[#0c0d10] hover:bg-[#1a1d24] transition-colors group"
                 >
                   <span className="p-2.5 rounded-lg bg-[#1a1d24] text-emerald-400 flex-shrink-0">
                     <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -91,7 +91,7 @@ export const AuditForm = () => {
 
                 <a
                   href="mailto:nextleaguemarketing@gmail.com"
-                  className="flex items-start gap-4 p-4 rounded-xl bg-[#0c0d10] border border-white/10 hover:border-white/30 transition-colors group"
+                  className="flex items-start gap-4 p-4 rounded-xl bg-[#0c0d10] hover:bg-[#1a1d24] transition-colors group"
                 >
                   <span className="p-2.5 rounded-lg bg-[#1a1d24] text-slate-300 flex-shrink-0">
                     <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -106,7 +106,7 @@ export const AuditForm = () => {
                   </span>
                 </a>
 
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-[#0c0d10] border border-white/10">
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-[#0c0d10]">
                   <span className="p-2.5 rounded-lg bg-[#1a1d24] text-slate-300 flex-shrink-0">
                     <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />

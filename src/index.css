@@ -183,93 +183,12 @@
   }
 }
 
-/* Mobile & WebKit GHL Form Overrides */
-iframe[src*="nextleaguemarketing.com"],
-iframe[id*="LxswiBnuIN5djToi78xC"],
-.ghl-form-container,
-.ghl-form-embed {
-  background-color: transparent !important;
-  background: transparent !important;
-  color-scheme: dark;
-}
-
-/* Remove GHL form container border */
-#_builder-form,
-.fb-form-container,
-.hl_wrapper,
-.hl_page-creator--content {
-  border: none !important;
-  outline: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-/* Remove the GHL footer links border area */
-.hl-footer-links,
-.form-builder--footer {
-  border-top: none !important;
-}
-
-/* Mobile text/select/textarea defaults & explicit site-wide dark form styling */
-input:not([type="checkbox"]):not([type="radio"]),
-select,
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #0c0d10 !important;
-  color: #f3f4f6 !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  border-radius: 8px !important;
-  caret-color: #10b981 !important; /* Emerald cursor matching brand palette */
-}
-
-input:not([type="checkbox"]):not([type="radio"]):focus,
-select:focus,
-textarea:focus {
-  outline: none !important;
-  border-color: #10b981 !important;
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25) !important;
-}
-
-/* Checkbox & Radio native appearance restoration with Emerald accent */
-input[type="checkbox"] {
-  -webkit-appearance: checkbox !important;
-  -moz-appearance: checkbox !important;
-  appearance: checkbox !important;
-  accent-color: #10b981 !important;
-  width: 1.15rem !important;
-  height: 1.15rem !important;
-  cursor: pointer;
-}
-
-input[type="radio"] {
-  -webkit-appearance: radio !important;
-  -moz-appearance: radio !important;
-  appearance: radio !important;
-  accent-color: #10b981 !important;
-  width: 1.15rem !important;
-  height: 1.15rem !important;
-  cursor: pointer;
-}
-
-/* High-contrast placeholder text */
-::placeholder,
-input::placeholder,
-textarea::placeholder,
-select::placeholder,
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder {
-  color: #9ca3af !important; /* High contrast crisp muted silver */
-  opacity: 1 !important;
-}
-
+/* Tap highlight reset */
 * {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Prevent mobile browser autofill blue background & force emerald cursor */
+/* Prevent mobile browser autofill blue background */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,
@@ -282,7 +201,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus,
 select:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 1000px #0c0d10 inset !important;
+  -webkit-box-shadow: 0 0 0 1000px #14161b inset !important;
   -webkit-text-fill-color: #f3f4f6 !important;
   caret-color: #10b981 !important;
   transition: background-color 5000s ease-in-out 0s;

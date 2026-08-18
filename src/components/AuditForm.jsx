@@ -35,7 +35,7 @@ export const AuditForm = () => {
               To Get Started
             </h3>
             
-            <div className="w-full min-h-[850px] bg-[#14161b] rounded-lg overflow-hidden">
+            <div className="w-full min-h-[850px] bg-[#14161b] overflow-hidden" style={{ clipPath: 'inset(0 0 2px 0)' }}>
               <iframe
                 src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
                 style={{
@@ -43,9 +43,10 @@ export const AuditForm = () => {
                   minHeight: '850px',
                   height: '100%',
                   border: 'none',
-                  borderRadius: '8px',
+                  outline: 'none',
                   backgroundColor: '#14161b',
-                  colorScheme: 'dark'
+                  colorScheme: 'dark',
+                  display: 'block'
                 }}
                 id="inline-LxswiBnuIN5djToi78xC" 
                 data-layout="{'id':'INLINE'}"
@@ -59,7 +60,7 @@ export const AuditForm = () => {
                 data-height="834"
                 data-layout-iframe-id="inline-LxswiBnuIN5djToi78xC"
                 data-form-id="LxswiBnuIN5djToi78xC"
-                title="Strategy Audit Form"
+                title=""
               />
             </div>
           </div>

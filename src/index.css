@@ -193,6 +193,23 @@ iframe[id*="LxswiBnuIN5djToi78xC"],
   color-scheme: dark;
 }
 
+/* Remove GHL form container border */
+#_builder-form,
+.fb-form-container,
+.hl_wrapper,
+.hl_page-creator--content {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Remove the GHL footer links border area */
+.hl-footer-links,
+.form-builder--footer {
+  border-top: none !important;
+}
+
 /* Mobile text/select/textarea defaults & explicit site-wide dark form styling */
 input:not([type="checkbox"]):not([type="radio"]),
 select,

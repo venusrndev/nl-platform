@@ -2,7 +2,7 @@ import React from 'react';
 
 export const TradesBand = () => {
   return (
-    <section id="trades-band" className="py-12 sm:py-16 bg-[#14161b] border-y border-white/10">
+    <section id="trades-band" className="py-8 sm:py-10 bg-[#14161b] border-y border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         <div className="font-ui text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-[#f3f4f6] mb-4 w-full">
           BUILT FOR THE TRADES

@@ -66,11 +66,11 @@ const CAPABILITIES = [
 
 export const WhiteLabelFeatures = () => {
   return (
-    <section id="automation" className="py-28 bg-[#0e1014] border-t border-white/10">
+    <section id="automation" className="py-16 sm:py-20 bg-[#0e1014] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
-          <span className="eyebrow mb-5">What we turn on</span>
+        <div className="text-center max-w-3xl mx-auto mb-10 flex flex-col items-center">
+          <span className="eyebrow mb-3">What we turn on</span>
           <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center w-full mx-auto mb-6">
             Never miss another lead.
           </h2>
@@ -84,7 +84,7 @@ export const WhiteLabelFeatures = () => {
         {/* Capability Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {CAPABILITIES.map((item) => (
-            <div key={item.title} className="panel panel-hover p-8 flex flex-col gap-5">
+            <div key={item.title} className="panel panel-hover p-6 sm:p-8 flex flex-col gap-4">
               <div className="text-slate-400">{item.icon}</div>
 
               <h3 className="font-headline text-xl sm:text-2xl font-bold text-[#f3f4f6]">
@@ -103,7 +103,7 @@ export const WhiteLabelFeatures = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 flex flex-col items-center justify-center text-center">
+        <div className="mt-10 flex flex-col items-center justify-center text-center">
           <a href="#audit-form" className="btn btn-lg btn-primary group">
             <span>Turn this on for my business</span>
             <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -2,30 +2,30 @@ import React from 'react';
 
 export const Reactivation = () => {
   return (
-    <section id="reactivation" className="py-28 bg-[#0e1014] border-t border-white/10">
+    <section id="reactivation" className="py-16 sm:py-20 bg-[#0e1014] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
-          <span className="eyebrow mb-5">The fastest win</span>
+        <div className="text-center max-w-3xl mx-auto mb-8 flex flex-col items-center">
+          <span className="eyebrow mb-3">The fastest win</span>
           <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center w-full mx-auto mb-6">
             The money's already in your phone.
           </h2>
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto mb-6">
+          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto mb-4">
             Every contractor is sitting on the same forgotten asset: a list of people who already paid them, already trusted them, and haven't thought about them in two years.
           </p>
-          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto mb-6">
+          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto mb-4">
             They didn't leave. Nobody followed up.
           </p>
-          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto mb-6">
+          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto mb-4">
             We take that list — the one in your phone, your old invoices, your spreadsheet — clean it up, and put a campaign in front of it. A tune-up offer before summer. A maintenance reminder before winter. A straight "we're still here" to the ones who've gone quiet.
           </p>
           <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto mb-6">
             No ad spend. No new leads to buy. Just the customers you already earned, reminded that you exist.
           </p>
 
-          <div className="space-y-4 mt-12 mb-12">
+          <div className="space-y-4 mt-8 mb-8">
             <div className="p-5 rounded-xl border bg-[#1a1d24] border-emerald-500/40 text-[#f3f4f6] flex items-start gap-4">
               <div className="w-10 h-10 rounded-full flex items-center justify-center font-ui font-bold text-sm flex-shrink-0 bg-emerald-500 text-[#07100c]">
                 1
@@ -57,7 +57,7 @@ export const Reactivation = () => {
             </div>
           </div>
           
-          <div className="max-w-3xl mx-auto panel p-6 sm:p-8 border-l-4 border-emerald-500 mb-12">
+          <div className="max-w-3xl mx-auto panel p-6 sm:p-8 border-l-4 border-emerald-500 mb-8">
             <p className="font-ui text-sm sm:text-base text-slate-300 font-light leading-relaxed">
               <strong className="text-[#f3f4f6]">This is usually where we start.</strong> It's the cheapest revenue you'll ever book, and it proves the system works before you spend a dollar on advertising.
             </p>

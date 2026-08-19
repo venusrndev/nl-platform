@@ -12,11 +12,11 @@ export const AuditForm = () => {
   }, []);
 
   return (
-    <section id="audit-form" className="py-28 bg-[#0e1014] border-t border-white/10">
+    <section id="audit-form" className="py-16 sm:py-20 bg-[#0e1014] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
-          <span className="eyebrow mb-5">Free · No pitch</span>
+        <div className="text-center max-w-3xl mx-auto mb-10 flex flex-col items-center">
+          <span className="eyebrow mb-3">Free · No pitch</span>
           <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center w-full mx-auto mb-6">
             See what you're missing.
           </h2>

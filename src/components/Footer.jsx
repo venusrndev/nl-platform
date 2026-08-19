@@ -23,10 +23,10 @@ export const Footer = () => {
               (951) 203-1294
             </a>
             <a
-              href="mailto:nextleaguemarketing@gmail.com"
+              href="mailto:info@nextleaguemarketing.com"
               className="hover:text-[#f3f4f6] transition-colors break-all"
             >
-              nextleaguemarketing@gmail.com
+              info@nextleaguemarketing.com
             </a>
             <span>Riverside, CA</span>
           </div>

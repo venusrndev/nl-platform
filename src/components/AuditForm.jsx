@@ -91,7 +91,7 @@ export const AuditForm = () => {
                 </a>
 
                 <a
-                  href="mailto:nextleaguemarketing@gmail.com"
+                  href="mailto:info@nextleaguemarketing.com"
                   className="flex items-start gap-4 p-4 rounded-xl bg-[#0c0d10] hover:bg-[#1a1d24] transition-colors group"
                 >
                   <span className="p-2.5 rounded-lg bg-[#1a1d24] text-slate-300 flex-shrink-0">
@@ -102,7 +102,7 @@ export const AuditForm = () => {
                   <span className="min-w-0">
                     <span className="eyebrow block text-[10px]">Email</span>
                     <strong className="font-ui text-xs sm:text-sm text-[#f3f4f6] group-hover:text-white transition-colors break-all">
-                      nextleaguemarketing@gmail.com
+                      info@nextleaguemarketing.com
                     </strong>
                   </span>
                 </a>

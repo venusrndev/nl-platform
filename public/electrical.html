@@ -371,10 +371,10 @@
       <h2>See what last month's missed calls actually cost.</h2>
       <p>We'll count how many calls went unanswered, how long your web leads waited for a reply, and how many past customers are sitting in your phone waiting to be asked. No pitch, no contract, no obligation.</p>
     </div>
-    <div class="reveal">
+    <div class="reveal" id="form-container-LxswiBnuIN5djToi78xC" style="max-height:850px;overflow:hidden;">
       <iframe
         src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
-        style="width:100%;min-height:694px;border:none;border-radius:4px"
+        style="width:100%;height:850px;max-height:850px;border:none;border-radius:4px;display:block;"
         id="inline-LxswiBnuIN5djToi78xC" 
         data-layout="{'id':'INLINE'}"
         data-trigger-type="alwaysShow"
@@ -391,6 +391,24 @@
       >
       </iframe>
       <script src="https://api.nextleaguemarketing.com/js/form_embed.js"></script>
+      <script>
+        (function() {
+          const container = document.getElementById('form-container-LxswiBnuIN5djToi78xC');
+          if (!container) return;
+          const MAX_H = 850;
+          function clamp() {
+            const iframe = container.querySelector('iframe');
+            if (!iframe) return;
+            const h = parseInt(iframe.style.height, 10);
+            if (h && h > MAX_H) {
+              iframe.style.height = MAX_H + 'px';
+            }
+          }
+          const obs = new MutationObserver(clamp);
+          obs.observe(container, { attributes: true, attributeFilter: ['style'], subtree: true });
+          setTimeout(clamp, 2000);
+        })();
+      </script>
     </div>
   </div>
 </section>

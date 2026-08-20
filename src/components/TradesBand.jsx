@@ -1,5 +1,12 @@
 import React from 'react';
 
+const TRADES = [
+  { label: 'HVAC', href: '/hvac' },
+  { label: 'Plumbing', href: '/plumbing' },
+  { label: 'Electrical', href: '/electrical' },
+  { label: 'Roofing', href: '/roofing' },
+];
+
 export const TradesBand = () => {
   return (
     <section id="trades-band" className="py-8 sm:py-10 bg-[#14161b] border-y border-white/10">
@@ -7,8 +14,16 @@ export const TradesBand = () => {
         <div className="font-ui text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-[#f3f4f6] mb-4 w-full">
           BUILT FOR THE TRADES
         </div>
-        <div className="font-ui text-lg sm:text-xl font-light text-slate-300 tracking-wide mb-3 text-center w-full">
-          HVAC · Plumbing · Electrical · Roofing
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-3">
+          {TRADES.map((trade) => (
+            <a
+              key={trade.href}
+              href={trade.href}
+              className="btn btn-sm btn-secondary"
+            >
+              {trade.label}
+            </a>
+          ))}
         </div>
         <div className="font-ui text-sm text-slate-400 font-light italic text-center w-full">
           If your phone is your cash register, this is for you.

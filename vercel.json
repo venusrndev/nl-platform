@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/hvac", "destination": "/hvac.html" },
+    { "source": "/plumbing", "destination": "/plumbing.html" },
+    { "source": "/electrical", "destination": "/electrical.html" },
+    { "source": "/roofing", "destination": "/roofing.html" }
+  ]
+}

@@ -1,6 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+
+const IFRAME_MAX_HEIGHT = 850;
 
 export const AuditForm = () => {
+  const iframeContainerRef = useRef(null);
+
   useEffect(() => {
     // Add GHL script dynamically when component mounts
     if (!document.querySelector('script[src="https://api.nextleaguemarketing.com/js/form_embed.js"]')) {
@@ -9,6 +13,39 @@ export const AuditForm = () => {
       script.async = true;
       document.body.appendChild(script);
     }
+
+    // The GHL form_embed.js script listens for postMessage events from the
+    // iframe and sets an ever-growing inline height on it. Without a cap the
+    // page scrolls endlessly.  We use a MutationObserver to clamp the iframe
+    // height every time the script touches it.
+    const container = iframeContainerRef.current;
+    if (!container) return;
+
+    const clampIframe = () => {
+      const iframe = container.querySelector('iframe');
+      if (!iframe) return;
+      const h = parseInt(iframe.style.height, 10);
+      if (h && h > IFRAME_MAX_HEIGHT) {
+        iframe.style.height = `${IFRAME_MAX_HEIGHT}px`;
+      }
+    };
+
+    const observer = new MutationObserver(clampIframe);
+    // Observe the container for any attribute / child changes the embed
+    // script might make (it sets style.height on the iframe).
+    observer.observe(container, {
+      attributes: true,
+      attributeFilter: ['style'],
+      subtree: true,
+    });
+
+    // Also clamp once after the script has likely initialized
+    const timer = setTimeout(clampIframe, 2000);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
@@ -35,13 +72,17 @@ export const AuditForm = () => {
               To Get Started
             </h3>
             
-            <div className="w-full min-h-[850px] bg-[#14161b] overflow-hidden" style={{ clipPath: 'inset(0 0 2px 0)' }}>
+            <div
+              ref={iframeContainerRef}
+              className="w-full bg-[#14161b] overflow-hidden"
+              style={{ maxHeight: `${IFRAME_MAX_HEIGHT}px`, clipPath: 'inset(0 0 2px 0)' }}
+            >
               <iframe
                 src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
                 style={{
                   width: '100%',
-                  minHeight: '850px',
-                  height: '100%',
+                  height: `${IFRAME_MAX_HEIGHT}px`,
+                  maxHeight: `${IFRAME_MAX_HEIGHT}px`,
                   border: 'none',
                   outline: 'none',
                   backgroundColor: '#14161b',

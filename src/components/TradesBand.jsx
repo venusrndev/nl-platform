@@ -19,7 +19,12 @@ export const TradesBand = () => {
             <a
               key={trade.href}
               href={trade.href}
-              className="btn btn-sm btn-secondary"
+              rel="external"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = trade.href;
+              }}
+              className="btn btn-sm btn-secondary cursor-pointer"
             >
               {trade.label}
             </a>

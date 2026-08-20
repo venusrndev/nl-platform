@@ -65,7 +65,15 @@ export const Reactivation = () => {
         </div>
 
         <div className="flex justify-center">
-          <a href="#audit-form" className="btn btn-lg btn-primary group">
+          <a
+            href="#audit-form"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('audit-form')?.scrollIntoView({ behavior: 'smooth' });
+              window.history.pushState({}, '', '#audit-form');
+            }}
+            className="btn btn-lg btn-primary group cursor-pointer"
+          >
             <span>Wake up my old customers</span>
             <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />

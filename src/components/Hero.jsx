@@ -57,7 +57,15 @@ export const Hero = () => {
 
         {/* Matched CTA pair */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-xl mx-auto">
-          <a href="#problem-solution" className="btn btn-lg btn-primary w-full sm:w-auto group">
+          <a
+            href="#problem-solution"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('problem-solution')?.scrollIntoView({ behavior: 'smooth' });
+              window.history.pushState({}, '', '#problem-solution');
+            }}
+            className="btn btn-lg btn-primary w-full sm:w-auto group cursor-pointer"
+          >
             <span>See how it works</span>
             <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />

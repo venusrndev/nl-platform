@@ -45,7 +45,22 @@ export const Navbar = () => {
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-8 text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-300">
             {NAV_LINKS.map((link) => (
-              <a key={link.href} href={link.href} className="hover:text-white transition-colors">
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const targetId = link.href.replace(/^\/?#/, '');
+                  const el = document.getElementById(targetId);
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState({}, '', `#${targetId}`);
+                  } else {
+                    window.location.href = link.href;
+                  }
+                }}
+                className="hover:text-white transition-colors cursor-pointer"
+              >
                 {link.label}
               </a>
             ))}
@@ -97,8 +112,19 @@ export const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block text-sm font-semibold uppercase tracking-wider text-[#f3f4f6]"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setMobileMenuOpen(false);
+                  const targetId = link.href.replace(/^\/?#/, '');
+                  const el = document.getElementById(targetId);
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState({}, '', `#${targetId}`);
+                  } else {
+                    window.location.href = link.href;
+                  }
+                }}
+                className="block text-sm font-semibold uppercase tracking-wider text-[#f3f4f6] cursor-pointer"
               >
                 {link.label}
               </a>

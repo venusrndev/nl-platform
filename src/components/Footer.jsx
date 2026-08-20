@@ -35,7 +35,15 @@ export const Footer = () => {
         {/* Bottom row */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-light">
           <p>© {new Date().getFullYear()} Next League Marketing. All rights reserved.</p>
-          <a href="#audit-form" className="hover:text-[#f3f4f6] transition-colors uppercase tracking-[0.15em] font-semibold">
+          <a
+            href="#audit-form"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('audit-form')?.scrollIntoView({ behavior: 'smooth' });
+              window.history.pushState({}, '', '#audit-form');
+            }}
+            className="hover:text-[#f3f4f6] transition-colors uppercase tracking-[0.15em] font-semibold cursor-pointer"
+          >
             Get a free audit
           </a>
         </div>

@@ -108,7 +108,15 @@ export const ProblemSolution = () => {
                 {data.footnote}
               </p>
 
-              <a href="#audit-form" className="btn btn-primary w-full">
+              <a
+                href="#audit-form"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('audit-form')?.scrollIntoView({ behavior: 'smooth' });
+                  window.history.pushState({}, '', '#audit-form');
+                }}
+                className="btn btn-primary w-full cursor-pointer"
+              >
                 Fix my response time
               </a>
             </div>

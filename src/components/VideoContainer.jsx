@@ -54,7 +54,6 @@ export const VideoContainer = ({
         src={shouldLoad ? src : undefined}
         poster={poster}
         autoPlay
-        loop
         muted
         playsInline
         className="w-full h-full object-cover relative z-10 pointer-events-none"

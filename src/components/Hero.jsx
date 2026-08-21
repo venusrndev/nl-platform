@@ -20,7 +20,6 @@ export const Hero = () => {
           src="/nl_monogram_hero.mp4"
           poster="/nl_monogram_hero-poster.webp"
           autoPlay
-          loop
           muted
           playsInline
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-full min-h-full object-cover object-center pointer-events-none"

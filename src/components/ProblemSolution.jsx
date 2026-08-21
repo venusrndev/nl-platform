@@ -49,6 +49,7 @@ export const ProblemSolution = () => {
           <div className="lg:col-span-7 rounded-2xl overflow-hidden border border-white/10">
             <VideoContainer
               src="/nl_custom_architecture_frame.mp4"
+              poster="/nl_custom_architecture_frame-poster.webp"
               aspectRatio="aspect-video"
               showBorder={false}
             />

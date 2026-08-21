@@ -18,6 +18,7 @@ export const Hero = () => {
         <video
           ref={videoRef}
           src="/nl_monogram_hero.mp4"
+          poster="/nl_monogram_hero-poster.webp"
           autoPlay
           loop
           muted

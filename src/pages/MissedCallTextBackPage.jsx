@@ -20,6 +20,8 @@ export const MissedCallTextBackPage = () => {
           content="Turn unanswered calls into booked jobs instantly. Next League Marketing automatically texts missed callers in 15 seconds."
         />
         <meta property="og:image" content="https://nextleaguemarketing.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="15-Second Missed-Call Text-Back for Service Businesses | Riverside, CA" />

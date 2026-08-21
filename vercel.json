@@ -1,5 +1,13 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.nextleaguemarketing.com" }],
+      "destination": "https://nextleaguemarketing.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/hvac", "destination": "/hvac.html" },
     { "source": "/plumbing", "destination": "/plumbing.html" },

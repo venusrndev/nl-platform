@@ -37,7 +37,7 @@ export const Hero = () => {
         <div className="inline-flex items-center justify-center gap-2.5 mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
           <span className="eyebrow text-[#EAE4EA]/70">
-            Riverside, CA · For HVAC, Plumbing & Electrical Contractors
+            Riverside, CA · For HVAC, Plumbing, Electrical & Roofing Contractors
           </span>
         </div>
 

@@ -19,6 +19,8 @@ export const FreeAuditPage = () => {
           content="Find out how many calls went unanswered last month and how much revenue you leaked. No pitch, no obligation."
         />
         <meta property="og:image" content="https://nextleaguemarketing.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Book Your Free Revenue Leakage Audit | Next League Marketing" />

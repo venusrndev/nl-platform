@@ -26,3 +26,6 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# 1440p video masters — kept out of the repo; also recoverable from git at a698370
+media-src

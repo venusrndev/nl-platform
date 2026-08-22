@@ -114,11 +114,40 @@ export const TextUsPage = () => {
             </p>
 
             {/*
+              Business identity block. Carrier review for A2P requires the
+              address, email and phone used to verify the brand to be visible
+              on the submitted page, and this is that page. Static text only —
+              this page must carry no form or input of any kind, so the chat
+              widget stays the single consent-collecting element.
+            */}
+            <div className="font-ui text-sm text-slate-400 font-light leading-relaxed mt-12">
+              <address className="not-italic">
+                Next League Marketing<br />
+                4691 Cover St, Riverside, CA 92506
+              </address>
+              <p className="mt-2">
+                <a
+                  href="tel:+19512031294"
+                  className="hover:text-[#f3f4f6] transition-colors"
+                >
+                  (951) 203-1294
+                </a>
+                <span className="mx-2 opacity-50">·</span>
+                <a
+                  href="mailto:info@nextleaguemarketing.com"
+                  className="hover:text-[#f3f4f6] transition-colors break-all"
+                >
+                  info@nextleaguemarketing.com
+                </a>
+              </p>
+            </div>
+
+            {/*
               Consent terms live here as real prerendered copy, not inside the
               widget, so a raw fetch of this page shows the opt-in language even
               though the widget itself mounts client-side.
             */}
-            <p className="font-ui text-xs text-slate-500 font-light leading-relaxed max-w-xl mt-12">
+            <p className="font-ui text-xs text-slate-500 font-light leading-relaxed max-w-xl mt-8">
               By sending a message you agree to receive text messages from Next
               League Marketing at the number you send from. Message and data
               rates may apply. Message frequency varies. Reply HELP for help or

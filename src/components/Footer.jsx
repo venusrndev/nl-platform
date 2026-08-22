@@ -32,7 +32,10 @@ export const Footer = () => {
             <Link to="/text-us" className="hover:text-[#f3f4f6] transition-colors">
               Text us
             </Link>
-            <span>Riverside, CA</span>
+            <address className="not-italic text-center md:text-right leading-relaxed">
+              Next League Marketing<br />
+              4691 Cover St, Riverside, CA 92506
+            </address>
           </div>
         </div>
 

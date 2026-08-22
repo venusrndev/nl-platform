@@ -157,8 +157,9 @@ export const AuditForm = () => {
                   </span>
                   <span className="min-w-0">
                     <span className="eyebrow block text-[10px]">Based in</span>
-                    <strong className="font-ui text-sm text-[#f3f4f6]">
-                      Riverside, CA
+                    <strong className="font-ui text-sm text-[#f3f4f6] font-semibold not-italic leading-relaxed block">
+                      Next League Marketing<br />
+                      4691 Cover St, Riverside, CA 92506
                     </strong>
                   </span>
                 </div>

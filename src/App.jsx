@@ -5,6 +5,7 @@ import MissedCallTextBackPage from './pages/MissedCallTextBackPage';
 import SpeedToLeadPage from './pages/SpeedToLeadPage';
 import RiversidePage from './pages/RiversidePage';
 import FreeAuditPage from './pages/FreeAuditPage';
+import TextUsPage from './pages/TextUsPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/speed-to-lead" element={<SpeedToLeadPage />} />
         <Route path="/riverside" element={<RiversidePage />} />
         <Route path="/free-audit" element={<FreeAuditPage />} />
+        <Route path="/text-us" element={<TextUsPage />} />
       </Routes>
     </div>
   );

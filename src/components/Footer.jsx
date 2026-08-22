@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BrandLockup } from './Logo';
 
 export const Footer = () => {
@@ -28,6 +29,9 @@ export const Footer = () => {
             >
               info@nextleaguemarketing.com
             </a>
+            <Link to="/text-us" className="hover:text-[#f3f4f6] transition-colors">
+              Text us
+            </Link>
             <span>Riverside, CA</span>
           </div>
         </div>

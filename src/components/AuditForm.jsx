@@ -58,10 +58,11 @@ export const AuditForm = () => {
             See what you're missing.
           </h2>
           <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto">
-            In 15 minutes we'll show you how many calls went unanswered last
-            month, how long your leads actually wait for a reply, and how many
-            past customers are sitting in your phone waiting to be asked. No
-            contract, no obligation, no slide deck.
+            In 15 minutes we'll go through it together — your call log, your
+            texts, your inbox. How many calls rang out last month. How many
+            messages never got an answer. How many past customers are sitting
+            in your phone waiting to be asked. No contract, no obligation, no
+            slide deck.
           </p>
         </div>
 

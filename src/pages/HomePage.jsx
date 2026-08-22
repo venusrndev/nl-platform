@@ -18,7 +18,7 @@ export const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Lead Recovery for HVAC &amp; Plumbing Contractors | Riverside, CA | Next League Marketing</title>
+        <title>HVAC, Plumbing, Electrical &amp; Roofing Marketing | Riverside CA</title>
         <meta
           name="description"
           content="We stop Riverside contractors from losing jobs to missed calls. Automated 15-second text-back, instant lead response, review generation and dormant-customer reactivation for HVAC, plumbing, electrical and roofing companies."
@@ -27,16 +27,18 @@ export const HomePage = () => {
           name="keywords"
           content="HVAC marketing Riverside, plumber marketing Riverside CA, contractor lead generation, missed call text back, GoHighLevel for contractors, A2P compliance contractors, Riverside CA"
         />
-        <meta property="og:title" content="Lead Recovery for HVAC & Plumbing Contractors | Riverside, CA | Next League Marketing" />
+        <meta property="og:title" content="HVAC, Plumbing, Electrical &amp; Roofing Marketing | Riverside CA" />
         <meta
           property="og:description"
           content="We stop Riverside contractors from losing jobs to missed calls. Automated 15-second text-back, instant lead response, review generation and dormant-customer reactivation for HVAC, plumbing, electrical and roofing companies."
         />
         <meta property="og:image" content="https://nextleaguemarketing.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nextleaguemarketing.com" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lead Recovery for HVAC & Plumbing Contractors | Riverside, CA | Next League Marketing" />
+        <meta name="twitter:title" content="HVAC, Plumbing, Electrical &amp; Roofing Marketing | Riverside CA" />
         <meta
           name="twitter:description"
           content="We stop Riverside contractors from losing jobs to missed calls. Automated 15-second text-back, instant lead response, review generation and dormant-customer reactivation for HVAC, plumbing, electrical and roofing companies."

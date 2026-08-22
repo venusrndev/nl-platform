@@ -21,6 +21,8 @@ export const RiversidePage = () => {
           content="Bespoke web architectures, missed-call text-back, and automated lead capture for local service businesses in Riverside, CA."
         />
         <meta property="og:image" content="https://nextleaguemarketing.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Local Marketing & Lead Recovery Systems in Riverside, CA" />

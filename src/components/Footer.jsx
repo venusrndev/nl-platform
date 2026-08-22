@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BrandLockup } from './Logo';
 
 export const Footer = () => {
@@ -28,13 +29,32 @@ export const Footer = () => {
             >
               info@nextleaguemarketing.com
             </a>
+            <Link to="/text-us" className="hover:text-[#f3f4f6] transition-colors">
+              Text us
+            </Link>
             <span>Riverside, CA</span>
           </div>
         </div>
 
         {/* Bottom row */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-light">
-          <p>© {new Date().getFullYear()} Next League Marketing. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-5 text-center sm:text-left">
+            <p>© {new Date().getFullYear()} Next League Marketing. All rights reserved.</p>
+            <div className="flex items-center gap-5">
+              <a
+                href="https://legal.nextleaguemarketing.com/privacy"
+                className="hover:text-[#f3f4f6] transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="https://legal.nextleaguemarketing.com/terms"
+                className="hover:text-[#f3f4f6] transition-colors"
+              >
+                Terms of Service
+              </a>
+            </div>
+          </div>
           <a
             href="#audit-form"
             onClick={(e) => {

@@ -14,6 +14,7 @@ const routesToPrerender = [
   '/speed-to-lead',
   '/riverside',
   '/free-audit',
+  '/text-us',
 ];
 
 (async () => {

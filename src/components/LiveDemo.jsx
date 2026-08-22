@@ -58,6 +58,7 @@ export const LiveDemo = () => {
           <div className="lg:col-span-7 rounded-2xl overflow-hidden border border-white/10">
             <VideoContainer
               src="/nl_lead_recovery_review.mp4"
+              poster="/nl_lead_recovery_review-poster.webp"
               aspectRatio="aspect-video"
               showBorder={false}
             />

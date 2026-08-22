@@ -64,6 +64,9 @@ export const Navbar = () => {
                 {link.label}
               </a>
             ))}
+            <Link to="/text-us" className="hover:text-white transition-colors">
+              Text us
+            </Link>
           </nav>
 
           {/* CTA Buttons */}
@@ -129,6 +132,14 @@ export const Navbar = () => {
                 {link.label}
               </a>
             ))}
+
+            <Link
+              to="/text-us"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-sm font-semibold uppercase tracking-wider text-[#f3f4f6]"
+            >
+              Text us
+            </Link>
 
             <div className="pt-2 flex flex-col gap-3">
               <a href="tel:+19512031294" className="btn btn-secondary w-full">

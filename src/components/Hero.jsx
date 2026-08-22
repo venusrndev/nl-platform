@@ -18,8 +18,8 @@ export const Hero = () => {
         <video
           ref={videoRef}
           src="/nl_monogram_hero.mp4"
+          poster="/nl_monogram_hero-poster.webp"
           autoPlay
-          loop
           muted
           playsInline
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-full min-h-full object-cover object-center pointer-events-none"
@@ -37,7 +37,7 @@ export const Hero = () => {
         <div className="inline-flex items-center justify-center gap-2.5 mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
           <span className="eyebrow text-[#EAE4EA]/70">
-            Riverside, CA · For HVAC, Plumbing & Electrical Contractors
+            Riverside, CA · For HVAC, Plumbing, Electrical & Roofing Contractors
           </span>
         </div>
 

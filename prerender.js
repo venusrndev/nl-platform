@@ -17,26 +17,43 @@ const routesToPrerender = [
   '/text-us',
 ];
 
+// 28 Sep 2026: every route used to ship index.html's (homepage) <head>.
+// The helmet-context block that stood here never ran: on React 19,
+// react-helmet-async 3 leaves the context empty, and React itself emits each
+// page's <title>, <meta> and <link> tags at the very start of renderToString's
+// output instead — so they landed inside #root, where crawlers ignore them,
+// and once the JS ran the head held two titles and two descriptions.
+// Now that leading block is lifted into <head> in place of index.html's
+// defaults. On the client React finds the same tags in <head> and reuses them.
+const LEADING_HEAD_TAG = /^(?:<title>[\s\S]*?<\/title>|<meta\b[^>]*>|<link\b[^>]*>)/;
+const DEFAULT_HEAD_TAG =
+  /[ \t]*(?:<!-- (?:Open Graph|Twitter Card) -->|<title>[\s\S]*?<\/title>|<meta\s+(?:name|property)="(?:description|keywords|og:[^"]+|twitter:[^"]+)"[^>]*>|<link\s+rel="canonical"[^>]*>)[ \t]*\n/g;
+
+function splitLeadingHeadTags(html) {
+  const tags = [];
+  let rest = html;
+  for (let m = rest.match(LEADING_HEAD_TAG); m; m = rest.match(LEADING_HEAD_TAG)) {
+    tags.push(m[0]);
+    rest = rest.slice(m[0].length);
+  }
+  return { tags, rest };
+}
+
 (async () => {
   for (const url of routesToPrerender) {
-    const { html, helmet } = render(url);
+    const { html } = render(url);
+    const { tags, rest } = splitLeadingHeadTags(html);
 
-    let pageHtml = template.replace('<div id="root"></div>', `<div id="root">${html}</div>`);
-
-    if (helmet) {
-      const titleStr = helmet.title ? helmet.title.toString() : '';
-      const metaStr = helmet.meta ? helmet.meta.toString() : '';
-      const linkStr = helmet.link ? helmet.link.toString() : '';
-      const scriptStr = helmet.script ? helmet.script.toString() : '';
-
-      if (titleStr) {
-        pageHtml = pageHtml.replace(/<title>[\s\S]*?<\/title>/i, titleStr);
-      }
-      const injectedTags = [metaStr, linkStr, scriptStr].filter(Boolean).join('\n');
-      if (injectedTags) {
-        pageHtml = pageHtml.replace('</head>', `${injectedTags}\n</head>`);
-      }
+    if (!tags.some((t) => t.startsWith('<title>'))) {
+      throw new Error(`Prerender: ${url} rendered no <title>`);
     }
+
+    const pageHtml = template
+      .replace(/<title>[\s\S]*?<\/title>/i, '<!--route-head-->')
+      .replace(DEFAULT_HEAD_TAG, '')
+      .replace(/\n(?:[ \t]*\n){2,}/g, '\n\n')
+      .replace('<!--route-head-->', () => tags.join('\n    '))
+      .replace('<div id="root"></div>', () => `<div id="root">${rest}</div>`);
 
     const filePath = url === '/' ? 'dist/index.html' : `dist${url}/index.html`;
     const dirPath = path.dirname(toAbsolute(filePath));

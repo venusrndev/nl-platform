@@ -3,37 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electrician Marketing & Lead Recovery | Riverside & the Inland Empire | Next League</title>
-<meta name="description" content="AI phone answering, missed-call text-back and instant lead response for electrical contractors in Riverside and the Inland Empire. No setup fee, no contract.">
-<link rel="canonical" href="https://nextleaguemarketing.com/electrical">
+<title>Customer Service Line for Multi-Site Car Wash &amp; Convenience Operators | Next League</title>
+<meta name="description" content="One number that answers for every location, turns each call into a tracked case and routes it to the right person. Built and run for car wash, fuel and convenience operators.">
+<link rel="canonical" href="https://nextleaguemarketing.com/multi-site">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Electrician Marketing & Lead Recovery | Riverside & the Inland Empire | Next League">
-<meta property="og:description" content="AI phone answering, missed-call text-back and instant lead response for electrical contractors in Riverside and the Inland Empire. No setup fee, no contract.">
-<meta property="og:url" content="https://nextleaguemarketing.com/electrical">
-<meta property="og:image" content="https://nextleaguemarketing.com/images/electrical-hero.jpg">
-<meta property="og:image:width" content="2000">
-<meta property="og:image:height" content="1125">
+<meta property="og:title" content="Customer Service Line for Multi-Site Car Wash & Convenience Operators | Next League">
+<meta property="og:description" content="One number that answers for every location, turns each call into a tracked case and routes it to the right person. Built and run for car wash, fuel and convenience operators.">
+<meta property="og:url" content="https://nextleaguemarketing.com/multi-site">
+<meta property="og:image" content="https://nextleaguemarketing.com/og-multi-site.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://nextleaguemarketing.com/images/electrical-hero.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Service",
-"serviceType":"Electrical contractor marketing and lead recovery",
-"provider":{"@type":"LocalBusiness","name":"Next League Marketing","image":"https://nextleaguemarketing.com/og-image.jpg",
+"serviceType":"Customer service phone line for multi-site car wash, fuel and convenience operators",
+"description":"One number that answers for every location, turns each call into a tracked case and routes it to the right person. Built and run for car wash, fuel and convenience operators.",
+"provider":{"@type":"LocalBusiness","name":"Next League Marketing","image":"https://nextleaguemarketing.com/og-multi-site.jpg",
  "telephone":"+19515280395","email":"info@nextleaguemarketing.com",
  "address":{"@type":"PostalAddress","streetAddress":"4691 Cover St","addressLocality":"Riverside","addressRegion":"CA","postalCode":"92506","addressCountry":"US"},
- "url":"https://nextleaguemarketing.com","priceRange":"$$"},
-"areaServed":[{"@type":"City","name":"Riverside"},{"@type":"City","name":"Corona"},
- {"@type":"City","name":"Moreno Valley"},{"@type":"City","name":"Jurupa Valley"},
- {"@type":"City","name":"Eastvale"},{"@type":"City","name":"Norco"},
- {"@type":"City","name":"Perris"},{"@type":"City","name":"Menifee"},
- {"@type":"City","name":"Temecula"}],
-"url":"https://nextleaguemarketing.com/electrical"}
+ "url":"https://nextleaguemarketing.com"},
+"url":"https://nextleaguemarketing.com/multi-site"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
 <!-- Brand tokens — single source of truth, shared with the React app -->
 <link rel="stylesheet" href="/brand-tokens.css">
+<!--
+  /multi-site — 28 Sep 2026. Same shell as the trade pages (nav, footer, tokens).
+  Brief constraints, keep them: no prices, no competitor names, no customer names,
+  no ratings, no complaint-site mentions, nothing about texting (so no "Text us"
+  link here), and no Riverside in the hero. Copy is final, word for word.
+-->
 <style>
   /* Brand tokens come from /brand-tokens.css. Every var() below carries a
      literal fallback so this page keeps full brand colour if that file 404s. */
@@ -76,6 +77,7 @@
     color:var(--ink-dim, #9ca3af); margin-bottom:18px; display:flex; align-items:center; gap:10px;}
   .eyebrow::before{content:''; width:26px; height:1px; background:var(--accent, #10b981);}
 
+  /* HERO */
   .hero{padding:0; min-height:88vh; display:flex; align-items:center; position:relative; overflow:hidden;}
   .hero-bg{position:absolute; inset:0; z-index:0;}
   .hero-bg::after{content:''; position:absolute; inset:0;
@@ -109,6 +111,7 @@
   .head h2{font-size:clamp(32px,4.6vw,54px); font-weight:700; line-height:1.02;
     text-transform:uppercase; letter-spacing:-.005em;}
 
+  /* LEAKS */
   .leak-layout{display:grid; grid-template-columns:.85fr 1.15fr; gap:56px; align-items:center;}
   @media(max-width:900px){.leak-layout{grid-template-columns:1fr; gap:40px;}}
   .leak-img{aspect-ratio:4/5; border:1px solid var(--line, rgba(255,255,255,0.10)); overflow:hidden; border-radius:var(--radius, 12px);}
@@ -120,6 +123,7 @@
   .leak h3{font-size:23px; font-weight:600; margin-bottom:7px; text-transform:uppercase; letter-spacing:.01em;}
   .leak p{font-size:14.5px; color:var(--ink-dim, #9ca3af);}
 
+  /* HOW */
   .how-item{display:grid; grid-template-columns:100px 1fr; gap:30px; padding:34px 0; border-top:1px solid var(--line, rgba(255,255,255,0.10));}
   .how-item:last-of-type{border-bottom:1px solid var(--line, rgba(255,255,255,0.10));}
   @media(max-width:640px){.how-item{grid-template-columns:1fr; gap:12px;}}
@@ -131,6 +135,7 @@
     text-transform:uppercase; color:var(--accent-soft, #059669); border:1px solid var(--line, rgba(255,255,255,0.10));
     padding:5px 11px; border-radius:20px;}
 
+  /* BAND */
   .band{position:relative; height:340px; overflow:hidden; border-top:1px solid var(--line, rgba(255,255,255,0.10)); border-bottom:1px solid var(--line, rgba(255,255,255,0.10));}
   .band img{position:absolute; inset:0;}
   .band-quote{position:relative; z-index:2; height:100%; display:flex; align-items:center;
@@ -152,6 +157,7 @@
   .stripe-note p{font-size:14.5px; color:var(--ink-dim, #9ca3af); line-height:1.65;}
   .stripe-note b{color:var(--ink, #f3f4f6);}
 
+  /* PRICING */
   .price-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:44px; max-width:720px;}
   @media(max-width:720px){.price-grid{grid-template-columns:1fr; max-width:420px;}}
   .price-card{border:1px solid var(--line, rgba(255,255,255,0.10)); padding:38px 32px; background:var(--canvas-2, #14161b);
@@ -168,6 +174,10 @@
   .price-list li{padding:9px 0; border-top:1px solid var(--line, rgba(255,255,255,0.10)); display:flex; gap:10px;}
   .price-list li:first-child{border-top:none;}
   .price-list li::before{content:'—'; color:var(--accent-soft, #059669); flex-shrink:0;}
+  .guarantee{margin-top:38px; border-left:2px solid var(--accent, #10b981); padding:18px 26px;
+    background:var(--canvas-2, #14161b); font-size:15px; color:var(--ink-dim, #9ca3af); max-width:680px;
+    border-radius:0 var(--radius, 12px) var(--radius, 12px) 0;}
+  .guarantee b{color:var(--ink, #f3f4f6);}
   .price-head{display:flex; align-items:baseline; justify-content:space-between; gap:12px;}
   .price-head .price-amt{margin:0; white-space:nowrap;}
   .price-tag{font-size:13.5px; color:var(--ink-dim, #9ca3af); margin-top:10px; padding-bottom:18px; margin-bottom:14px; border-bottom:1px solid var(--line, rgba(255,255,255,0.10));}
@@ -181,6 +191,7 @@
   @media(max-width:640px){.price-notes div{grid-template-columns:1fr; gap:4px;}}
   .price-person{margin-top:30px; max-width:680px; font-size:15px; line-height:1.7; color:var(--ink, #f3f4f6);}
 
+  /* FORM */
   .form-section{background:var(--canvas-2, #14161b); border-top:1px solid var(--line, rgba(255,255,255,0.10)); border-bottom:1px solid var(--line, rgba(255,255,255,0.10));}
   .form-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;}
   @media(max-width:860px){.form-grid{grid-template-columns:1fr; gap:36px;}}
@@ -228,10 +239,37 @@
         var(--canvas-3, #1a1d24) 14px, var(--canvas-3, #1a1d24) 28px); }
   img{ background:transparent; }
   img.missing{ display:none; }
+  /* /multi-site additions, 28 Sep 2026 — same tokens and type sizes as the trade pages */
+  .hero-plain{padding:0; min-height:78vh; display:flex; align-items:center;}
+  .hero-plain .hero-inner{padding:150px 0 110px;}
+  .hero-plain h1{font-size:clamp(46px,7.4vw,92px); font-weight:700; line-height:.96;
+    letter-spacing:-.01em; text-transform:uppercase; max-width:16ch;}
+  .hero-plain p.lede{margin-top:26px; font-size:18.5px; color:var(--ink-dim, #9ca3af); max-width:620px;}
+  .card-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px;}
+  @media(max-width:760px){.card-grid{grid-template-columns:1fr;}}
+  .line-card{border:1px solid var(--line, rgba(255,255,255,0.10)); background:var(--canvas-2, #14161b);
+    border-radius:var(--radius, 12px); padding:32px;}
+  .line-card h3{font-size:25px; font-weight:600; text-transform:uppercase; margin-bottom:10px;}
+  .line-card p{color:var(--ink-dim, #9ca3af); font-size:15px; line-height:1.7;}
+  .split{display:grid; grid-template-columns:repeat(2,1fr); gap:20px;}
+  @media(max-width:760px){.split{grid-template-columns:1fr;}}
+  .split p{font-size:15px; line-height:1.75; color:var(--ink-dim, #9ca3af);}
+  .split b{color:var(--ink, #f3f4f6); font-weight:600;}
+  .plain-note{max-width:680px; font-size:15px; line-height:1.75; color:var(--ink-dim, #9ca3af);}
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; list-style:none;}
+  @media(max-width:860px){.steps{grid-template-columns:1fr;}}
+  .steps li{border:1px solid var(--line, rgba(255,255,255,0.10)); background:var(--canvas-2, #14161b);
+    border-radius:var(--radius, 12px); padding:32px;}
+  .steps .num{font-family:var(--font-headline, 'Playfair Display', Georgia, serif); font-size:16px; font-weight:600;
+    letter-spacing:.1em; color:var(--accent, #10b981); display:block; margin-bottom:14px;}
+  .steps p{font-size:15px; line-height:1.7; color:var(--ink, #f3f4f6);}
+  .cta-final{background:var(--canvas-2, #14161b); border-top:1px solid var(--line, rgba(255,255,255,0.10));}
+  .cta-final h2{font-size:clamp(32px,4.6vw,54px); font-weight:700; line-height:1.02; text-transform:uppercase; max-width:18ch;}
+  .cta-final p{margin-top:18px; font-size:15px; line-height:1.75; color:var(--ink-dim, #9ca3af); max-width:560px;}
+  footer .address a{color:var(--ink-faint, #6b7280); text-decoration:none;}
 </style>
 </head>
 <body>
-
 <nav>
   <div class="wrap">
     <a class="brand" href="/" aria-label="Next League Marketing home">
@@ -239,208 +277,99 @@
       <span class="brand-rule" aria-hidden="true"></span>
       <span class="brand-text">
         <span class="brand-name">Next League</span>
-        <span class="brand-trade">ELECTRICAL</span>
+        <span class="brand-trade">Multi-site</span>
       </span>
     </a>
     <div class="navlinks">
-      <a href="#problem">The Leak</a>
-      <a href="#how">How It Works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="/text-us">Text us</a>
+      <a href="#what">What the line does</a>
+      <a href="#start">How we start</a>
     </div>
-    <a class="navcta" href="#audit">See it live</a>
+    <a class="navcta" href="https://api.leadconnectorhq.com/widget/booking/SIAoMrkYu4acIVNAuREd">Talk to us</a>
   </div>
 </nav>
 
-<section class="hero">
-  <div class="hero-bg"><picture><source type="image/webp" srcset="images/electrical-hero.webp"><img src="images/electrical-hero.jpg" width="2000" height="1125" onerror="this.classList.add('missing')" alt="Electrician's gloved hands terminating conductors into a breaker panel"></picture></div>
+<section class="hero-plain">
   <div class="hero-inner">
     <div class="wrap">
-      <div class="eyebrow">For electrical contractors · Riverside &amp; the Inland Empire</div>
-      <h1>Your hands are full.<br>Your phone <em>isn't</em> answered.</h1>
-      <p class="lede">You quoted the panel upgrade three weeks ago. Then nothing.</p>
+      <div class="eyebrow">For car wash, fuel and convenience operators</div>
+      <h1>One number that answers for every location.</h1>
+      <p class="lede">Customers call about damage, billing, memberships and cancellations, and store staff are busy serving. We run one line that answers every call, logs it as a case with a reference number, and gets it to the person at your company who can fix it.</p>
       <div class="hero-actions">
-        <a class="btn-primary" href="#audit">Book a 15-minute audit</a>
-        <a class="btn-ghost" href="#how">See how it works ↓</a>
+        <a class="btn-primary" href="https://api.leadconnectorhq.com/widget/booking/SIAoMrkYu4acIVNAuREd">Talk to us</a>
+        <a class="btn-ghost" href="mailto:info@nextleaguemarketing.com">Email us</a>
       </div>
     </div>
   </div>
 </section>
 
-<div class="ticker-wrap">
-  <div class="ticker">
-    <span>MISSED-CALL TEXT-BACK</span><span>·</span><span>AI ANSWERING</span><span>·</span><span>INSTANT LEAD REPLY</span><span>·</span><span>ONE INBOX</span><span>·</span><span>ONLINE BOOKING</span><span>·</span>
-    <span>MISSED-CALL TEXT-BACK</span><span>·</span><span>AI ANSWERING</span><span>·</span><span>INSTANT LEAD REPLY</span><span>·</span><span>ONE INBOX</span><span>·</span><span>ONLINE BOOKING</span><span>·</span>
-  </div>
-</div>
-
-<section id="problem">
+<section id="what">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow">Where it's leaking</div>
-      <h2>You didn't lose the job.<br>You lost the ten minutes<br>before they called someone else.</h2>
+      <h2>What the line does</h2>
     </div>
-    <div class="leak-layout">
-      <div class="leak-img reveal"><picture><source type="image/webp" srcset="images/electrical-leak.webp"><img src="images/electrical-leak.jpg" width="1100" height="1375" loading="lazy" decoding="async" onerror="this.classList.add('missing')" alt="Phone on a workbench beside an electrician's tool pouch"></picture></div>
-      <div class="leak-list reveal">
-        <div class="leak">
-          <div class="num">I.</div>
-          <p>Service calls are quick. The money is in what they turn into — and that needs follow-up.</p>
-        </div>
-        <div class="leak">
-          <div class="num">II.</div>
-          <p>Big-ticket quotes go cold in days, not weeks. Most never get a second touch.</p>
-        </div>
-        <div class="leak">
-          <div class="num">III.</div>
-          <p>Every unanswered call is a homeowner who found somebody else before lunch.</p>
-        </div>
+    <div class="card-grid reveal">
+      <div class="line-card">
+        <h3>Answers every call, 24/7.</h3>
+        <p>In your company's name. Every call opens by telling the caller they're speaking to an automated assistant and that the call is recorded.</p>
+      </div>
+      <div class="line-card">
+        <h3>Every call becomes a case.</h3>
+        <p>A reference number, an owner at your company and a deadline. Nothing sits unread in a web form.</p>
+      </div>
+      <div class="line-card">
+        <h3>Routed to whoever can fix it.</h3>
+        <p>Damage claims to your claims person, cancellations to whoever can process them, each with a backup. Overdue cases get a reminder, then escalate.</p>
+      </div>
+      <div class="line-card">
+        <h3>Sends people to finish online.</h3>
+        <p>Joining, gift cards, balances and cancellations go to your own pages. We never take payments.</p>
       </div>
     </div>
   </div>
 </section>
 
-<div class="band">
-  <picture><source type="image/webp" srcset="images/electrical-band.webp"><img src="images/electrical-band.jpg" width="2400" height="1029" loading="lazy" decoding="async" onerror="this.classList.add('missing')" alt="Macro detail of colour-coded conductors running into breaker terminals"></picture>
-  <div class="band-quote"><div class="wrap"><p>They hire whoever <b>answers first.</b> Not whoever's best.</p></div></div>
-</div>
-
-<section id="how">
+<section id="decide">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow">What we actually turn on</div>
-      <h2>Built around the one thing<br>that runs your business.</h2>
+      <h2>What we do, and what you decide</h2>
     </div>
-
-    <div class="how-item reveal">
-      <div class="how-mark">I.</div>
-      <div class="how-body">
-        <h3>Texts back in seconds</h3>
-        <p>A call rings out and they get a text from your business number before they've reached the next name on the list. The conversation starts while you finish the job.</p>
-        <span class="tag">Both plans</span>
-      </div>
-    </div>
-    <div class="how-item reveal">
-      <div class="how-mark">II.</div>
-      <div class="how-body">
-        <h3>Picks up when you can't</h3>
-        <p>An AI receptionist answers the calls you can't get to, day or night, works out whether it's an emergency or a booking, and puts it on your calendar.</p>
-        <span class="tag">Answer plan</span>
-      </div>
-    </div>
-
-    <div class="stripe-note reveal">
-      <div class="ic"></div>
-      <p><b>Your number gets registered properly, and that's on us.</b> Carriers block business texting from unregistered numbers — no bounce-back, the messages simply never arrive. We handle the filing during onboarding and nothing goes live until it's approved and actually delivering.</p>
-    </div>
-
-    <div class="reveal" style="margin-top:44px;">
-      <div class="eyebrow">What stays exactly as it is</div>
-      <p style="max-width:620px; color:var(--ink-dim, #9ca3af); font-size:15px; line-height:1.75;">
-        We don't replace your schedule software. It handles every job that's booked. We handle everyone who calls — and doesn't get through.
-      </p>
-      <div class="platform-row">
-        <div class="chip">ServiceTitan</div><div class="chip">Housecall Pro</div><div class="chip">Jobber</div><div class="chip">Service Fusion</div><div class="chip">Kickserv</div>
-      </div>
-      <p class="platform-note">Keep whatever you schedule on. We sit <b>in front</b> of it, catch what never makes it that far, then hand the booked job straight over.</p>
+    <div class="split reveal">
+      <div class="line-card"><p><b>We do:</b> answer, give accurate information, capture the right details, route, remind and report.</p></div>
+      <div class="line-card"><p><b>You decide:</b> claims, refunds, cancellations and anything else that needs a judgment call. Before we switch on, we agree who resolves each type of case, so the line doesn't just become a nicer front door to the same backlog.</p></div>
     </div>
   </div>
 </section>
 
-<section id="pricing">
+<section id="limits">
   <div class="wrap">
     <div class="head reveal">
-      <div class="eyebrow">Pricing</div>
-      <h2>No setup fee.<br>Priced against one job,<br>not your revenue.</h2>
+      <h2>What it doesn't do</h2>
     </div>
-    <!-- Plans: copied by hand from src/constants/pricing.js — keep identical (28 Sep 2026). -->
-    <div class="price-grid reveal">
-      <div class="price-card">
-        <div class="price-head">
-          <div class="price-name">Catch</div>
-          <div class="price-amt">$297 <span>/ month</span></div>
-        </div>
-        <p class="price-tag">For when nothing can slip through.</p>
-        <ul class="price-list">
-          <li>Missed-call text-back from your business number</li>
-          <li>Instant text and email reply to web forms</li>
-          <li>One inbox for texts, email, Facebook and Instagram</li>
-          <li>Online booking with automatic reminders</li>
-          <li>Texting registration filed for you</li>
-        </ul>
-        <a class="btn-primary price-btn" href="#audit">Book a call</a>
-      </div>
-      <div class="price-card">
-        <div class="price-head">
-          <div class="price-name">Answer</div>
-          <div class="price-amt">$497 <span>/ month</span></div>
-        </div>
-        <p class="price-tag">For when you want the phone picked up.</p>
-        <p class="price-leadin">Everything in Catch, plus:</p>
-        <ul class="price-list">
-          <li>An AI receptionist answers the calls you can't, 24/7</li>
-          <li>Books straight into your calendar</li>
-          <li>A text summary of every call it takes</li>
-          <li>Up to 500 AI minutes a month, about 150 calls. Past that, calls fall back to text-back, so there's no surprise bill.</li>
-        </ul>
-        <a class="btn-primary price-btn" href="#audit">Book a call</a>
-      </div>
-    </div>
-    <dl class="price-notes reveal">
-      <div><dt>Guarantee</dt><dd>Run it for a month. If it hasn't caught you a job you'd otherwise have missed, cancel. You've paid for one month and that's all.</dd></div>
-      <div><dt>Timing</dt><dd>Built in a week. Live the moment carrier registration clears.</dd></div>
-      <div><dt>Custom</dt><dd>Need quote follow-ups, seasonal campaigns or several locations? We build those to order. <a href="#audit">Talk to us →</a></dd></div>
-    </dl>
-    <p class="price-person reveal">You get a person in Riverside, not a ticket queue. Cody sits down with you, goes through your call log and texts, and answers his own phone when you ring.</p>
+    <p class="plain-note reveal">It doesn't log into your membership or point-of-sale system, and it never cancels or changes a plan itself. Your staff apply those changes from the logged case. It doesn't take card payments.</p>
   </div>
 </section>
 
-<section class="form-section" id="audit">
-  <div class="wrap form-grid">
-    <div class="reveal">
-      <div class="eyebrow">Free · 15 minutes</div>
-      <h2>See what last month's missed calls actually cost.</h2>
-      <p>We'll go through it together — your call log, your texts, your inbox. How many calls rang out last month. How many messages never got an answer. How many past customers are sitting in your phone waiting to be asked. No pitch, no contract, no obligation.</p>
+<section id="start">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>How we start</h2>
     </div>
-    <div class="reveal" id="form-container-LxswiBnuIN5djToi78xC" style="max-height:850px;overflow:hidden;">
-      <iframe
-        src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
-        style="width:100%;height:850px;max-height:850px;border:none;border-radius:4px;display:block;"
-        id="inline-LxswiBnuIN5djToi78xC" 
-        data-layout="{'id':'INLINE'}"
-        data-trigger-type="alwaysShow"
-        data-trigger-value=""
-        data-activation-type="alwaysActivated"
-        data-activation-value=""
-        data-deactivation-type="neverDeactivate"
-        data-deactivation-value=""
-        data-form-name="Welcome to the NextLeague"
-        data-height="694"
-        data-layout-iframe-id="inline-LxswiBnuIN5djToi78xC"
-        data-form-id="LxswiBnuIN5djToi78xC"
-        title="Welcome to the NextLeague"
-      >
-      </iframe>
-      <script src="https://api.nextleaguemarketing.com/js/form_embed.js"></script>
-      <script>
-        (function() {
-          const container = document.getElementById('form-container-LxswiBnuIN5djToi78xC');
-          if (!container) return;
-          const MAX_H = 850;
-          function clamp() {
-            const iframe = container.querySelector('iframe');
-            if (!iframe) return;
-            const h = parseInt(iframe.style.height, 10);
-            if (h && h > MAX_H) {
-              iframe.style.height = MAX_H + 'px';
-            }
-          }
-          const obs = new MutationObserver(clamp);
-          obs.observe(container, { attributes: true, attributeFilter: ['style'], subtree: true });
-          setTimeout(clamp, 2000);
-        })();
-      </script>
-    </div>
+    <ol class="steps reveal">
+      <li><span class="num">01</span><p>A conversation about how calls and complaints are handled today, and where they get stuck.</p></li>
+      <li><span class="num">02</span><p>A pilot sized to what we find, measured against where you are now.</p></li>
+      <li><span class="num">03</span><p>A monthly report: calls answered, cases opened and closed, how long they took, and what's still open.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="cta-final" id="talk">
+  <div class="wrap reveal">
+    <h2>Tell us how calls are handled today.</h2>
+    <p>Thirty minutes. We'll ask how calls and complaints reach you now, and tell you straight whether a line like this would help.</p>
+    <div class="hero-actions">
+        <a class="btn-primary" href="https://api.leadconnectorhq.com/widget/booking/SIAoMrkYu4acIVNAuREd">Talk to us</a>
+        <a class="btn-ghost" href="mailto:info@nextleaguemarketing.com">Email us</a>
+      </div>
   </div>
 </section>
 
@@ -451,17 +380,12 @@
       <span class="brand-rule" aria-hidden="true"></span>
       <span class="brand-text">
         <span class="brand-name">Next League</span>
-        <span class="brand-trade">ELECTRICAL</span>
+        <span class="brand-trade">Multi-site</span>
       </span>
     </div>
-    <p>Based in Riverside, CA · Serving the Inland Empire · <a href="tel:+19515280395">(951) 528-0395</a> · For electricians whose hands are the one thing that shouldn't be on a phone.</p>
-    <address class="address">Next League Marketing<br>4691 Cover St, Riverside, CA 92506<br><a href="mailto:info@nextleaguemarketing.com">info@nextleaguemarketing.com</a></address>
+    <address class="address">Next League Marketing<br>4691 Cover St, Riverside, CA 92506<br><a href="tel:+19515280395">(951) 528-0395</a> · <a href="mailto:info@nextleaguemarketing.com">info@nextleaguemarketing.com</a></address>
     <nav class="footer-nav" aria-label="Footer">
       <a href="/">Next League Marketing home</a>
-      <a href="/text-us">Text us for a live demo</a>
-      <a href="/hvac">HVAC marketing</a>
-      <a href="/plumbing">Plumbing marketing</a>
-      <a href="/roofing">Roofing marketing</a>
     </nav>
     <p class="legal"><a href="https://legal.nextleaguemarketing.com/privacy">Privacy Policy</a><span class="sep">·</span><a href="https://legal.nextleaguemarketing.com/terms">Terms of Service</a></p>
   </div>

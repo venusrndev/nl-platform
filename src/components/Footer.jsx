@@ -4,24 +4,24 @@ import { BrandLockup } from './Logo';
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#0c0d10] py-10 border-t border-white/10">
+    <footer className="bg-[#0c0d10] py-10 border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 pb-10 border-b border-white/10">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 pb-10 border-b border-[color:var(--line,rgba(255,255,255,0.10))]">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
             <BrandLockup size="large" />
             <p className="eyebrow text-[#EAE4EA]/60">
-              Strategy. Automation. Growth.
+              Every call answered.
             </p>
           </div>
 
           {/* Contact */}
           <div className="flex flex-col items-center md:items-end gap-3 text-sm text-slate-400 font-light">
             <a
-              href="tel:+19512031294"
+              href="tel:+19515280395"
               className="hover:text-[#f3f4f6] transition-colors"
             >
-              (951) 203-1294
+              (951) 528-0395
             </a>
             <a
               href="mailto:info@nextleaguemarketing.com"
@@ -59,11 +59,13 @@ export const Footer = () => {
             </div>
           </div>
           <a
-            href="#audit-form"
+            href="/#audit"
             onClick={(e) => {
+              const el = document.getElementById('audit');
+              if (!el) return;
               e.preventDefault();
-              document.getElementById('audit-form')?.scrollIntoView({ behavior: 'smooth' });
-              window.history.pushState({}, '', '#audit-form');
+              el.scrollIntoView({ behavior: 'smooth' });
+              window.history.pushState({}, '', '#audit');
             }}
             className="hover:text-[#f3f4f6] transition-colors uppercase tracking-[0.15em] font-semibold cursor-pointer"
           >

@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const TITLE = 'Text Us | Next League Marketing';
 const DESCRIPTION =
-  "Text us and see the system answer. You'll have a reply in 15 seconds — that's the product, and this time you're on the other end of it.";
+  "Text us and see the system answer. You'll have a reply within seconds — that's the product, and this time you're on the other end of it.";
 
 const WIDGET_ID = '6a88693fb433348f4015a92b';
 const LOADER_SRC = 'https://widgets.leadconnectorhq.com/loader.js';
@@ -104,7 +104,7 @@ export const TextUsPage = () => {
             </h1>
 
             <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed max-w-xl">
-              You'll have a reply in 15 seconds. That's the whole product —
+              You'll have a reply within seconds. That's the whole product —
               you're just on the other end of it this time.
             </p>
 
@@ -127,10 +127,10 @@ export const TextUsPage = () => {
               </address>
               <p className="mt-2">
                 <a
-                  href="tel:+19512031294"
+                  href="tel:+19515280395"
                   className="hover:text-[#f3f4f6] transition-colors"
                 >
-                  (951) 203-1294
+                  (951) 528-0395
                 </a>
                 <span className="mx-2 opacity-50">·</span>
                 <a

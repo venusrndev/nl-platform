@@ -36,6 +36,15 @@
   --line: rgba(255, 255, 255, 0.10);
   --line-strong: rgba(255, 255, 255, 0.22);
 
+  /*
+   * 28 Sep 2026 (Andy): four values the site already used without a token,
+   * tokenised so the look stays exactly as it was. No other values added.
+   */
+  --color-text-body: #cbd5e1;              /* body copy (was Tailwind slate-300) */
+  --color-surface-alt: #0e1014;            /* alternate section background */
+  --color-border-subtle: rgba(255, 255, 255, 0.15);
+  --color-border-strong: rgba(255, 255, 255, 0.20);
+
   /* Geometry — panels and cards take --radius, buttons take --radius-pill */
   --radius: 12px;
   --radius-pill: 9999px;

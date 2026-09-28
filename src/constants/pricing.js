@@ -54,6 +54,9 @@ export const PRICING_NOTES = [
     label: 'Timing',
     text: 'Built in a week. Live the moment carrier registration clears.',
   },
+  // 28 Sep 2026 (Andy): this is the one place "quote follow-ups" and
+  // "seasonal campaigns" may appear, because it says they are built to order.
+  // It is exempt from the banned-terms check; everywhere else stays at zero.
   {
     label: 'Custom',
     text: 'Need quote follow-ups, seasonal campaigns or several locations? We build those to order.',

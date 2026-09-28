@@ -35,6 +35,18 @@ const FAQS = [
   },
 ];
 
+// 28 Sep 2026: the same questions and answers as FAQPage structured data,
+// built from FAQS so the markup and the page can't drift apart.
+const FAQ_JSON_LD = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}).replace(/</g, '\\u003c');
+
 const Chevron = ({ open }) => (
   <svg
     className={`w-4 h-4 flex-shrink-0 text-[#9ca3af] transition-transform duration-200 motion-reduce:transition-none ${open ? 'rotate-180' : ''}`}
@@ -50,6 +62,7 @@ export const Faq = () => {
 
   return (
     <section id="faq" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: FAQ_JSON_LD }} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
         <div className="lg:col-span-4">
           <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05]">

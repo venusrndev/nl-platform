@@ -24,6 +24,7 @@ export const HomePage = () => {
     <>
       <Helmet>
         <title>{TITLE}</title>
+        <link rel="canonical" href="https://nextleaguemarketing.com/" />
         <meta name="description" content={DESCRIPTION} />
         <meta
           name="keywords"

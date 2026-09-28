@@ -10,6 +10,7 @@ export const SpeedToLeadPage = () => {
     <>
       <Helmet>
         <title>Speed-to-Lead Automation & Lead Recovery | Riverside, CA</title>
+        <link rel="canonical" href="https://nextleaguemarketing.com/speed-to-lead" />
         <meta
           name="description"
           content="Stop losing leads to slow response times. Automated instant SMS and email responses for Riverside County service businesses."
@@ -23,6 +24,7 @@ export const SpeedToLeadPage = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nextleaguemarketing.com/speed-to-lead" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Speed-to-Lead Automation & Lead Recovery | Riverside, CA" />
         <meta

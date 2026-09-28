@@ -6,6 +6,9 @@ const IFRAME_MAX_HEIGHT = 850;
 // had the enquiry form. With showBooking, the GHL booking calendar renders
 // above the form. The form_embed.js this component already loads also sizes
 // booking iframes. Other pages that use this section don't get the calendar.
+// 28 Sep 2026 (Andy, round 2): the GHL widget is white, so it sits in a light
+// card (--ink background, --radius corners, the site's panel padding) to read
+// as a deliberate panel rather than a hole in the page.
 const BOOKING_ID = 'SIAoMrkYu4acIVNAuREd';
 
 export const AuditForm = ({ showBooking = false }) => {
@@ -75,7 +78,7 @@ export const AuditForm = ({ showBooking = false }) => {
 
         <div className="max-w-3xl mx-auto">
           {showBooking && (
-            <div className="mb-6 p-2 sm:p-4 bg-[#14161b] overflow-hidden rounded-2xl">
+            <div className="mb-6 p-6 sm:p-8 bg-[color:var(--ink,#f3f4f6)] rounded-[var(--radius,12px)] overflow-hidden">
               <iframe
                 src={`https://api.leadconnectorhq.com/widget/booking/${BOOKING_ID}`}
                 id={`${BOOKING_ID}_booking`}

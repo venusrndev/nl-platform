@@ -32,7 +32,7 @@ export const FreeAuditPage = () => {
       </Helmet>
       <Navbar />
       <main className="pt-20">
-        <AuditForm />
+        <AuditForm showBooking />
       </main>
       <Footer />
     </>

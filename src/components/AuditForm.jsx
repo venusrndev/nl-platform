@@ -2,7 +2,13 @@ import React, { useEffect, useRef } from 'react';
 
 const IFRAME_MAX_HEIGHT = 850;
 
-export const AuditForm = () => {
+// 28 Sep 2026 (Andy): /free-audit must let someone book a call, and it only
+// had the enquiry form. With showBooking, the GHL booking calendar renders
+// above the form. The form_embed.js this component already loads also sizes
+// booking iframes. Other pages that use this section don't get the calendar.
+const BOOKING_ID = 'SIAoMrkYu4acIVNAuREd';
+
+export const AuditForm = ({ showBooking = false }) => {
   const iframeContainerRef = useRef(null);
 
   useEffect(() => {
@@ -68,6 +74,18 @@ export const AuditForm = () => {
         </div>
 
         <div className="max-w-3xl mx-auto">
+          {showBooking && (
+            <div className="mb-6 p-2 sm:p-4 bg-[#14161b] overflow-hidden rounded-2xl">
+              <iframe
+                src={`https://api.leadconnectorhq.com/widget/booking/${BOOKING_ID}`}
+                id={`${BOOKING_ID}_booking`}
+                title="Book a 15-minute call"
+                scrolling="no"
+                style={{ width: '100%', minHeight: '760px', border: 'none', overflow: 'hidden', display: 'block' }}
+              />
+            </div>
+          )}
+
           <div className="p-6 sm:p-10 bg-[#14161b] text-[#f3f4f6] overflow-hidden rounded-2xl">
             <div
               ref={iframeContainerRef}

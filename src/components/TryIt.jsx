@@ -5,10 +5,10 @@ import React from 'react';
  * de67641e — copy on the left, a framed panel on the right carrying the
  * number large.
  *
- * The reference also shows message bubbles under the copy. They are left out
- * on purpose: the brief gives no bubble text, and the only honest content would
- * be the exact text our number sends, which is not in the brief. Add them once
- * that text is supplied.
+ * The reference also shows message bubbles under the copy.
+ * 28 Sep 2026 (Andy): one outgoing bubble, labelled "The text you'll get",
+ * carrying the exact text our number sends. No reply bubble. Line breaks are
+ * the message's own.
  *
  * TODO (28 Sep 2026, not today): when the AI demo line exists, this block
  * changes to "Call and talk to our AI receptionist".
@@ -33,6 +33,15 @@ export const TryIt = () => {
             number lands on your phone within seconds, the same text your
             customers would get. If Cody's free, he'll pick up instead.
           </p>
+
+          <figure className="mt-8 max-w-md">
+            <figcaption className="eyebrow mb-3">The text you'll get</figcaption>
+            <p className="font-ui text-sm leading-relaxed rounded-2xl rounded-bl-md bg-[#1a1d24] text-[#f3f4f6] px-4 py-3">
+              Hi, this is Cody at Next League Marketing. Sorry I missed your call.<br />
+              Text me back what you need, or grab 15 min here:<br />
+              <a href="/free-audit" className="text-emerald-400 underline underline-offset-2 break-all">nextleaguemarketing.com/free-audit</a>
+            </p>
+          </figure>
         </div>
 
         <div className="lg:col-span-5">

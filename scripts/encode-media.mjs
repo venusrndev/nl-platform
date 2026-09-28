@@ -3,7 +3,7 @@
  * Re-encode the homepage background videos for the web, and cut their posters.
  *
  *   node scripts/encode-media.mjs                          # all three
- *   node scripts/encode-media.mjs nl_lead_recovery_review  # just one
+ *   node scripts/encode-media.mjs nl_monogram_hero         # just one
  *   node scripts/encode-media.mjs --src some/other/dir     # different source
  *
  * The masters are 2560x1440 H.264 with a ~130 kb/s AAC track on videos that are
@@ -13,7 +13,7 @@
  * Masters live in ./media-src (gitignored — 17MB, never served). If they are
  * missing, recover them from git:
  *
- *   mkdir -p media-src && for v in nl_monogram_hero nl_custom_architecture_frame nl_lead_recovery_review; do \
+ *   mkdir -p media-src && for v in nl_monogram_hero nl_custom_architecture_frame; do \
  *     git show a698370:public/$v.mp4 > media-src/$v.mp4; done
  *
  * Always encode from the master. Re-encoding an already-encoded 720p file bakes
@@ -44,13 +44,10 @@ const VIDEOS = {
   // Mostly hard-edged UI panels. Also fine at 30.
   nl_custom_architecture_frame: { crf: 30 },
 
-  // CRF 24, not 30. This clip resolves to the "Lead Recovered" five-star payoff
-  // over large near-black gradients with fine light streaks — exactly the content
-  // that bands and smears under aggressive quantisation, and at 30 it visibly did.
-  // It is the video the section's whole argument rests on, so it gets the bitrate:
-  // 824KB -> 1865KB, SSIM 0.9854 -> 0.9919, still a 78% cut from the master.
-  // The extra ~1MB is worth it here and would be wasted on the other two.
-  nl_lead_recovery_review: { crf: 24 },
+  // 28 Sep 2026: nl_lead_recovery_review is retired. The homepage section that
+  // played it was removed in the copy overhaul and Andy had the file deleted.
+  // Its master is still in git at a698370 if it's ever wanted; it was encoded
+  // at CRF 24 (not 30) because its dark gradients banded at 30.
 };
 
 const OUT_DIR = 'public';

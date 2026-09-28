@@ -78,7 +78,7 @@ export const Faq = () => {
                   </button>
                 </h3>
                 <div id={panelId} role="region" aria-labelledby={btnId} hidden={!isOpen}>
-                  <p className="font-ui text-sm sm:text-base text-slate-300 font-light leading-relaxed pb-6 pr-8">
+                  <p className="font-ui text-sm sm:text-base text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed pb-6 pr-8">
                     {item.a}
                   </p>
                 </div>

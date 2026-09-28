@@ -103,7 +103,7 @@ export const TextUsPage = () => {
               Text us and watch it happen.
             </h1>
 
-            <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed max-w-xl">
+            <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed max-w-xl">
               You'll have a reply in 15 seconds. That's the whole product —
               you're just on the other end of it this time.
             </p>

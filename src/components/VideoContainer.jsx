@@ -47,7 +47,7 @@ export const VideoContainer = ({
   }, [shouldLoad, src]);
 
   return (
-    <div className={`relative overflow-hidden bg-[#14161b] w-full h-full group ${aspectRatio} ${showBorder ? 'rounded-2xl border border-white/15 shadow-2xl' : ''} ${className}`}>
+    <div className={`relative overflow-hidden bg-[#14161b] w-full h-full group ${aspectRatio} ${showBorder ? 'rounded-2xl border border-[color:var(--color-border-subtle,rgba(255,255,255,0.15))] shadow-2xl' : ''} ${className}`}>
       {/* HTML5 Video Tag with exact src path binding */}
       <video
         ref={videoRef}

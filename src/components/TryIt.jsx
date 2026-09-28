@@ -16,7 +16,7 @@ import React from 'react';
 
 // Corner brackets on the framed panel, drawn from the line token.
 const Corner = ({ className }) => (
-  <span className={`absolute w-4 h-4 border-white/20 ${className}`} aria-hidden="true"></span>
+  <span className={`absolute w-4 h-4 border-[color:var(--color-border-strong,rgba(255,255,255,0.20))] ${className}`} aria-hidden="true"></span>
 );
 
 export const TryIt = () => {
@@ -28,7 +28,7 @@ export const TryIt = () => {
           <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] mb-6">
             Call us and let it ring.
           </h2>
-          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed max-w-2xl">
+          <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed max-w-2xl">
             Call (951) 528-0395 and hang up once it's rung out. A text from our
             number lands on your phone within seconds, the same text your
             customers would get. If Cody's free, he'll pick up instead.

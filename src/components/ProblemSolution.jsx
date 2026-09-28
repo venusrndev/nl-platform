@@ -12,7 +12,7 @@ const ROWS = [
 
 export const ProblemSolution = () => {
   return (
-    <section id="problem-solution" className="scroll-mt-20 py-16 sm:py-20 bg-[#0e1014] border-t border-white/10">
+    <section id="problem-solution" className="scroll-mt-20 py-16 sm:py-20 bg-[color:var(--color-surface-alt,#0e1014)] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 flex flex-col items-center">
@@ -21,7 +21,7 @@ export const ProblemSolution = () => {
             Faster beats better.<br />
             <span className="text-gradient-silver inline-block">Every time.</span>
           </h2>
-          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto">
+          <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed text-center w-full mx-auto">
             A homeowner with a dead AC calls three companies and hires the first
             one that picks up. Most people who reach voicemail don't leave a
             message. They try the next name on the list.
@@ -58,7 +58,7 @@ export const ProblemSolution = () => {
                   {ROWS.map(([situation, now, withUs]) => (
                     <tr key={situation} className="border-b border-white/10 last:border-0 align-top">
                       <th scope="row" className="py-4 pr-3 text-left font-light text-[#9ca3af] leading-snug">{situation}</th>
-                      <td className="py-4 px-3 font-bold text-slate-300 leading-snug">{now}</td>
+                      <td className="py-4 px-3 font-bold text-[color:var(--color-text-body,#cbd5e1)] leading-snug">{now}</td>
                       <td className="py-4 pl-3 font-bold text-emerald-400 leading-snug">{withUs}</td>
                     </tr>
                   ))}

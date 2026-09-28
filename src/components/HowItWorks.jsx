@@ -11,8 +11,8 @@ import React, { useState, useEffect, useRef } from 'react';
  */
 
 const Frame = ({ children }) => (
-  <div className="relative mx-auto w-full max-w-60 rounded-3xl border border-white/15 bg-[#0c0d10] p-3 pt-6">
-    <span className="absolute top-2 left-1/2 -translate-x-1/2 w-10 h-1 rounded-full bg-white/15" aria-hidden="true"></span>
+  <div className="relative mx-auto w-full max-w-60 rounded-3xl border border-[color:var(--color-border-subtle,rgba(255,255,255,0.15))] bg-[#0c0d10] p-3 pt-6">
+    <span className="absolute top-2 left-1/2 -translate-x-1/2 w-10 h-1 rounded-full bg-[color:var(--color-border-subtle,rgba(255,255,255,0.15))]" aria-hidden="true"></span>
     <span className="eyebrow block text-center mb-3">Example</span>
     {children}
   </div>
@@ -180,7 +180,7 @@ export const HowItWorks = () => {
               </div>
               <span className="font-ui text-xs font-bold text-emerald-400 mt-6">{num}</span>
               <h3 className="font-headline text-2xl font-bold text-[#f3f4f6] mt-2 leading-tight">{title}</h3>
-              <p className="font-ui text-sm text-slate-300 font-light leading-relaxed mt-3">{body}</p>
+              <p className="font-ui text-sm text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed mt-3">{body}</p>
               {tag && (
                 <span className="self-start mt-4 font-ui text-[11px] font-semibold uppercase tracking-[0.15em] text-emerald-400 border border-emerald-500/40 rounded-full px-3 py-1">
                   {tag}

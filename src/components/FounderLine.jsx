@@ -4,12 +4,12 @@ import React from 'react';
 // its own headline, per brief.
 export const FounderLine = () => {
   return (
-    <section id="people" className="scroll-mt-20 py-16 sm:py-20 bg-[#0e1014] border-t border-white/10">
+    <section id="people" className="scroll-mt-20 py-16 sm:py-20 bg-[color:var(--color-surface-alt,#0e1014)] border-t border-white/10">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] mb-6">
           Two people, not a call center.
         </h2>
-        <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed">
+        <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed">
           One of us spent years on job sites and knows what it's like to hear the
           phone ring when both hands are full. We're in Riverside, and we'll come
           to you. You get a person, not a ticket queue: Cody sits down with you,

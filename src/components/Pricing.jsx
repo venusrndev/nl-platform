@@ -22,7 +22,7 @@ export const Pricing = () => {
           <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center mb-6">
             Two plans. No setup fee. No contract.
           </h2>
-          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed">
+          <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed">
             Priced against one job, not your revenue.
           </p>
         </div>
@@ -37,7 +37,7 @@ export const Pricing = () => {
                   <span className="font-ui text-sm text-[#9ca3af] font-light"> {plan.period}</span>
                 </p>
               </div>
-              <p className="font-ui text-sm text-slate-300 font-light mt-3 pb-6 border-b border-white/10">
+              <p className="font-ui text-sm text-[color:var(--color-text-body,#cbd5e1)] font-light mt-3 pb-6 border-b border-white/10">
                 {plan.tagline}
               </p>
 
@@ -48,7 +48,7 @@ export const Pricing = () => {
               )}
               <ul className="space-y-3 mt-5 mb-8">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 font-ui text-sm text-slate-300 font-light leading-relaxed">
+                  <li key={feature} className="flex items-start gap-3 font-ui text-sm text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed">
                     <Tick />
                     <span>{feature}</span>
                   </li>
@@ -66,7 +66,7 @@ export const Pricing = () => {
           {PRICING_NOTES.map((note) => (
             <div key={note.label} className="flex flex-col sm:flex-row gap-1 sm:gap-4">
               <dt className="eyebrow sm:w-28 sm:flex-shrink-0 sm:pt-1">{note.label}</dt>
-              <dd className="font-ui text-sm text-slate-300 font-light leading-relaxed">
+              <dd className="font-ui text-sm text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed">
                 {note.text}
                 {note.link && (
                   <>

@@ -52,7 +52,7 @@ export const WhoItsFor = () => {
               <h3 className="font-headline text-2xl font-bold text-[#f3f4f6] mt-auto pt-10 leading-tight">
                 {card.headline}
               </h3>
-              <p className="font-ui text-sm text-slate-300 font-light leading-relaxed mt-3">
+              <p className="font-ui text-sm text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed mt-3">
                 {card.line}
               </p>
               <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-1">

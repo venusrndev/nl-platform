@@ -58,7 +58,7 @@ export const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden xl:flex items-center gap-8 whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-300">
+          <nav className="hidden xl:flex items-center gap-8 whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.15em] text-[color:var(--color-text-body,#cbd5e1)]">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
@@ -103,7 +103,7 @@ export const Navbar = () => {
           <div className="flex xl:hidden items-center gap-2">
             <a
               href="tel:+19515280395"
-              className="w-11 h-11 rounded-full border border-white/20 text-[#f3f4f6] flex items-center justify-center"
+              className="w-11 h-11 rounded-full border border-[color:var(--color-border-strong,rgba(255,255,255,0.20))] text-[#f3f4f6] flex items-center justify-center"
               aria-label="Call Next League Marketing"
             >
               <PhoneIcon className="w-4 h-4" />
@@ -111,7 +111,7 @@ export const Navbar = () => {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="w-11 h-11 rounded-full border border-white/20 text-[#f3f4f6] flex items-center justify-center"
+              className="w-11 h-11 rounded-full border border-[color:var(--color-border-strong,rgba(255,255,255,0.20))] text-[#f3f4f6] flex items-center justify-center"
               aria-label="Toggle navigation"
               aria-expanded={mobileMenuOpen}
             >

@@ -52,7 +52,7 @@ export const AuditForm = () => {
   // phone and email move to one line under the form, and the address lives in
   // the site footer. Form embed unchanged.
   return (
-    <section id="audit" className="scroll-mt-20 py-16 sm:py-20 bg-[#0e1014] border-t border-white/10">
+    <section id="audit" className="scroll-mt-20 py-16 sm:py-20 bg-[color:var(--color-surface-alt,#0e1014)] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 flex flex-col items-center">
@@ -60,7 +60,7 @@ export const AuditForm = () => {
           <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center w-full mx-auto mb-6">
             See what last month's missed calls cost you.
           </h2>
-          <p className="font-ui text-base sm:text-lg text-slate-300 font-light leading-relaxed text-center w-full mx-auto">
+          <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed text-center w-full mx-auto">
             We'll go through it together: your call log, your texts, your inbox.
             How many calls rang out, and how many messages never got an answer.
             No contract, no obligation.
@@ -103,7 +103,7 @@ export const AuditForm = () => {
             </div>
           </div>
 
-          <p className="font-ui text-sm text-slate-300 font-light text-center mt-6 leading-relaxed">
+          <p className="font-ui text-sm text-[color:var(--color-text-body,#cbd5e1)] font-light text-center mt-6 leading-relaxed">
             Rather just talk? Call or text{' '}
             <a href="tel:+19515280395" className="text-[#f3f4f6] font-semibold hover:text-emerald-400 transition-colors whitespace-nowrap">
               (951) 528-0395

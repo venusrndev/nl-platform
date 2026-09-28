@@ -12,12 +12,12 @@ export const MissedCallTextBackPage = () => {
         <title>Missed-Call Text-Back for Service Businesses | Riverside, CA</title>
         <meta
           name="description"
-          content="Turn unanswered calls into booked jobs instantly. Next League Marketing automatically texts missed callers in 15 seconds."
+          content="Turn unanswered calls into booked jobs instantly. Next League Marketing automatically texts missed callers within seconds."
         />
         <meta property="og:title" content="Missed-Call Text-Back for Service Businesses | Riverside, CA" />
         <meta
           property="og:description"
-          content="Turn unanswered calls into booked jobs instantly. Next League Marketing automatically texts missed callers in 15 seconds."
+          content="Turn unanswered calls into booked jobs instantly. Next League Marketing automatically texts missed callers within seconds."
         />
         <meta property="og:image" content="https://nextleaguemarketing.com/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
@@ -27,7 +27,7 @@ export const MissedCallTextBackPage = () => {
         <meta name="twitter:title" content="Missed-Call Text-Back for Service Businesses | Riverside, CA" />
         <meta
           name="twitter:description"
-          content="Turn unanswered calls into booked jobs instantly. Next League Marketing automatically texts missed callers in 15 seconds."
+          content="Turn unanswered calls into booked jobs instantly. Next League Marketing automatically texts missed callers within seconds."
         />
         <meta name="twitter:image" content="https://nextleaguemarketing.com/og-image.jpg" />
       </Helmet>

@@ -11,7 +11,7 @@ export const Footer = () => {
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
             <BrandLockup size="large" />
             <p className="eyebrow text-[#EAE4EA]/60">
-              Strategy. Automation. Growth.
+              Every call answered.
             </p>
           </div>
 
@@ -59,11 +59,13 @@ export const Footer = () => {
             </div>
           </div>
           <a
-            href="#audit-form"
+            href="/#audit"
             onClick={(e) => {
+              const el = document.getElementById('audit');
+              if (!el) return;
               e.preventDefault();
-              document.getElementById('audit-form')?.scrollIntoView({ behavior: 'smooth' });
-              window.history.pushState({}, '', '#audit-form');
+              el.scrollIntoView({ behavior: 'smooth' });
+              window.history.pushState({}, '', '#audit');
             }}
             className="hover:text-[#f3f4f6] transition-colors uppercase tracking-[0.15em] font-semibold cursor-pointer"
           >

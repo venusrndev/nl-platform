@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
-import RevenueMechanics from '../components/RevenueMechanics';
+import HowItWorks from '../components/HowItWorks';
 import AuditForm from '../components/AuditForm';
 import Footer from '../components/Footer';
 
@@ -33,7 +33,7 @@ export const SpeedToLeadPage = () => {
       </Helmet>
       <Navbar />
       <main className="pt-20">
-        <RevenueMechanics />
+        <HowItWorks />
         <AuditForm />
       </main>
       <Footer />

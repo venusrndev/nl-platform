@@ -21,7 +21,7 @@ const Corner = ({ className }) => (
 
 export const TryIt = () => {
   return (
-    <section id="try-it" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-white/10">
+    <section id="try-it" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         <div className="lg:col-span-7">
           <span className="eyebrow mb-3 block">See it work</span>
@@ -45,7 +45,7 @@ export const TryIt = () => {
         </div>
 
         <div className="lg:col-span-5">
-          <div className="relative bg-[#14161b] border border-white/10 rounded-2xl px-6 py-12 sm:py-16 text-center">
+          <div className="relative bg-[#14161b] border border-[color:var(--line,rgba(255,255,255,0.10))] rounded-2xl px-6 py-12 sm:py-16 text-center">
             <Corner className="top-3 left-3 border-t border-l" />
             <Corner className="top-3 right-3 border-t border-r" />
             <Corner className="bottom-3 left-3 border-b border-l" />

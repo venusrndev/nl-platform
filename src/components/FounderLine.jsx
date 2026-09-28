@@ -4,7 +4,7 @@ import React from 'react';
 // its own headline, per brief.
 export const FounderLine = () => {
   return (
-    <section id="people" className="scroll-mt-20 py-16 sm:py-20 bg-[color:var(--color-surface-alt,#0e1014)] border-t border-white/10">
+    <section id="people" className="scroll-mt-20 py-16 sm:py-20 bg-[color:var(--color-surface-alt,#0e1014)] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] mb-6">
           Two people, not a call center.

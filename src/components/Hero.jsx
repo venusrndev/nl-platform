@@ -35,7 +35,7 @@ const ConversationPanel = () => (
   <figure className="panel p-5 sm:p-6 w-full">
     <figcaption className="eyebrow mb-5">Example</figcaption>
 
-    <div className="hidden sm:grid grid-cols-2 gap-4 pb-3 mb-4 border-b border-white/10">
+    <div className="hidden sm:grid grid-cols-2 gap-4 pb-3 mb-4 border-b border-[color:var(--line,rgba(255,255,255,0.10))]">
       <span className="font-ui text-[11px] font-semibold uppercase tracking-[0.15em] text-[#9ca3af]">Business</span>
       <span className="font-ui text-[11px] font-semibold uppercase tracking-[0.15em] text-[#9ca3af] text-right">Customer</span>
     </div>

@@ -36,7 +36,7 @@ const Arrow = () => (
 
 export const WhoItsFor = () => {
   return (
-    <section id="industries" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-white/10">
+    <section id="industries" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
         <div className="lg:col-span-5">
           <span className="eyebrow mb-3 block">Who it's for</span>

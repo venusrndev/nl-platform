@@ -27,7 +27,7 @@ const CallVisual = () => (
         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
         Answered
       </p>
-      <p className="font-ui text-xs text-[#f3f4f6] mt-5 rounded-full border border-white/10 py-2">3:30 today</p>
+      <p className="font-ui text-xs text-[#f3f4f6] mt-5 rounded-full border border-[color:var(--line,rgba(255,255,255,0.10))] py-2">3:30 today</p>
     </div>
   </Frame>
 );
@@ -55,7 +55,7 @@ const INBOX = [
 
 const InboxVisual = () => (
   <Frame>
-    <ul className="rounded-2xl bg-[#14161b] divide-y divide-white/10">
+    <ul className="rounded-2xl bg-[#14161b] divide-y divide-[color:var(--line,rgba(255,255,255,0.10))]">
       {INBOX.map((row) => (
         <li key={row.channel} className="px-3 py-2.5">
           <p className="font-ui text-[11px] font-semibold uppercase tracking-[0.15em] text-[#f3f4f6]">{row.channel}</p>
@@ -122,7 +122,7 @@ const MissedCallDemo = () => {
 
   return (
     <div className="panel p-6 sm:p-8 space-y-6 max-w-xl mx-auto mt-12">
-      <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide border-b border-white/10 pb-4 text-center">
+      <h3 className="font-headline text-xl font-bold uppercase text-[#f3f4f6] tracking-wide border-b border-[color:var(--line,rgba(255,255,255,0.10))] pb-4 text-center">
         Try it yourself
       </h3>
 
@@ -137,7 +137,7 @@ const MissedCallDemo = () => {
             <li
               key={step.title}
               className={`p-4 rounded-xl border transition-colors duration-500 flex items-center gap-4 ${
-                reached ? 'bg-[#1a1d24] border-emerald-500/40 text-[#f3f4f6]' : 'bg-[#0c0d10] border-white/10 text-[#6b7280]'
+                reached ? 'bg-[#1a1d24] border-emerald-500/40 text-[#f3f4f6]' : 'bg-[#0c0d10] border-[color:var(--line,rgba(255,255,255,0.10))] text-[#6b7280]'
               }`}
             >
               <span
@@ -161,7 +161,7 @@ const MissedCallDemo = () => {
 
 export const HowItWorks = () => {
   return (
-    <section id="how" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-white/10">
+    <section id="how" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
           <span className="eyebrow mb-3">How it works</span>

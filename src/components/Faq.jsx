@@ -49,7 +49,7 @@ export const Faq = () => {
   const baseId = useId();
 
   return (
-    <section id="faq" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-white/10">
+    <section id="faq" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
         <div className="lg:col-span-4">
           <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05]">
@@ -57,13 +57,13 @@ export const Faq = () => {
           </h2>
         </div>
 
-        <div className="lg:col-span-8 border-t border-white/10">
+        <div className="lg:col-span-8 border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
           {FAQS.map((item, i) => {
             const isOpen = open === i;
             const btnId = `${baseId}-q${i}`;
             const panelId = `${baseId}-a${i}`;
             return (
-              <div key={item.q} className="border-b border-white/10">
+              <div key={item.q} className="border-b border-[color:var(--line,rgba(255,255,255,0.10))]">
                 <h3>
                   <button
                     id={btnId}

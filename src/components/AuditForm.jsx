@@ -61,7 +61,7 @@ export const AuditForm = ({ showBooking = false }) => {
   // phone and email move to one line under the form, and the address lives in
   // the site footer. Form embed unchanged.
   return (
-    <section id="audit" className="scroll-mt-20 py-16 sm:py-20 bg-[color:var(--color-surface-alt,#0e1014)] border-t border-white/10">
+    <section id="audit" className="scroll-mt-20 py-16 sm:py-20 bg-[color:var(--color-surface-alt,#0e1014)] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 flex flex-col items-center">

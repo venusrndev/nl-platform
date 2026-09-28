@@ -61,7 +61,7 @@ export const VideoContainer = ({
       />
 
       {showBorder && (
-        <div className="absolute inset-0 border border-white/10 rounded-2xl pointer-events-none group-hover:border-emerald-500/40 transition duration-500 z-20"></div>
+        <div className="absolute inset-0 border border-[color:var(--line,rgba(255,255,255,0.10))] rounded-2xl pointer-events-none group-hover:border-emerald-500/40 transition duration-500 z-20"></div>
       )}
     </div>
   );

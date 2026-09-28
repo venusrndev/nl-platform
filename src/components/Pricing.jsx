@@ -15,7 +15,7 @@ const Tick = () => (
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-white/10">
+    <section id="pricing" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
           <span className="eyebrow mb-3">Pricing</span>
@@ -37,7 +37,7 @@ export const Pricing = () => {
                   <span className="font-ui text-sm text-[#9ca3af] font-light"> {plan.period}</span>
                 </p>
               </div>
-              <p className="font-ui text-sm text-[color:var(--color-text-body,#cbd5e1)] font-light mt-3 pb-6 border-b border-white/10">
+              <p className="font-ui text-sm text-[color:var(--color-text-body,#cbd5e1)] font-light mt-3 pb-6 border-b border-[color:var(--line,rgba(255,255,255,0.10))]">
                 {plan.tagline}
               </p>
 

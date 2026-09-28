@@ -10,17 +10,20 @@ const ROWS = [
   ['Typical first reply', 'Hours', 'Under a minute, day or night'],
 ];
 
-export const ProblemSolution = () => {
+// 28 Sep 2026: headingAs lets a page whose first section this is make the
+// heading its h1 (same words, same classes). Everywhere else it stays an h2.
+export const ProblemSolution = (props) => {
+  const Heading = props.headingAs || 'h2';
   return (
     <section id="problem-solution" className="scroll-mt-20 py-16 sm:py-20 bg-[color:var(--color-surface-alt,#0e1014)] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 flex flex-col items-center">
           <span className="eyebrow mb-3">The real problem</span>
-          <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center w-full mx-auto mb-6">
+          <Heading className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center w-full mx-auto mb-6">
             Faster beats better.<br />
             <span className="text-gradient-silver inline-block">Every time.</span>
-          </h2>
+          </Heading>
           <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed text-center w-full mx-auto">
             A homeowner with a dead AC calls three companies and hires the first
             one that picks up. Most people who reach voicemail don't leave a

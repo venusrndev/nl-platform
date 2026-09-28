@@ -35,7 +35,7 @@ export const SpeedToLeadPage = () => {
       </Helmet>
       <Navbar />
       <main className="pt-20">
-        <HowItWorks />
+        <HowItWorks headingAs="h1" />
         <AuditForm />
       </main>
       <Footer />

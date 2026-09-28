@@ -35,7 +35,7 @@ export const MissedCallTextBackPage = () => {
       </Helmet>
       <Navbar />
       <main className="pt-20">
-        <ProblemSolution />
+        <ProblemSolution headingAs="h1" />
         <AuditForm />
       </main>
       <Footer />

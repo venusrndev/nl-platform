@@ -11,7 +11,10 @@ const IFRAME_MAX_HEIGHT = 850;
 // as a deliberate panel rather than a hole in the page.
 const BOOKING_ID = 'SIAoMrkYu4acIVNAuREd';
 
-export const AuditForm = ({ showBooking = false }) => {
+// 28 Sep 2026: headingAs lets a page whose first section this is make the
+// heading its h1 (same words, same classes). Everywhere else it stays an h2.
+export const AuditForm = ({ showBooking = false, ...props }) => {
+  const Heading = props.headingAs || 'h2';
   const iframeContainerRef = useRef(null);
 
   useEffect(() => {
@@ -66,9 +69,9 @@ export const AuditForm = ({ showBooking = false }) => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 flex flex-col items-center">
           <span className="eyebrow mb-3">Free · 15 minutes · No pitch</span>
-          <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center w-full mx-auto mb-6">
+          <Heading className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center w-full mx-auto mb-6">
             See what last month's missed calls cost you.
-          </h2>
+          </Heading>
           <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed text-center w-full mx-auto">
             We'll go through it together: your call log, your texts, your inbox.
             How many calls rang out, and how many messages never got an answer.

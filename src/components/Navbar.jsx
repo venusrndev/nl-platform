@@ -71,9 +71,9 @@ export const Navbar = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <a href="tel:+19512031294" className="btn btn-sm btn-secondary">
+            <a href="tel:+19515280395" className="btn btn-sm btn-secondary">
               <PhoneIcon />
-              <span>(951) 203-1294</span>
+              <span>(951) 528-0395</span>
             </a>
 
             <Link to="/free-audit" className="btn btn-sm btn-primary">
@@ -84,7 +84,7 @@ export const Navbar = () => {
           {/* Mobile Menu Button */}
           <div className="flex lg:hidden items-center gap-2">
             <a
-              href="tel:+19512031294"
+              href="tel:+19515280395"
               className="w-10 h-10 rounded-full border border-white/20 text-[#f3f4f6] flex items-center justify-center"
               aria-label="Call Next League Marketing"
             >
@@ -142,9 +142,9 @@ export const Navbar = () => {
             </Link>
 
             <div className="pt-2 flex flex-col gap-3">
-              <a href="tel:+19512031294" className="btn btn-secondary w-full">
+              <a href="tel:+19515280395" className="btn btn-secondary w-full">
                 <PhoneIcon />
-                <span>(951) 203-1294</span>
+                <span>(951) 528-0395</span>
               </a>
               <Link
                 to="/free-audit"

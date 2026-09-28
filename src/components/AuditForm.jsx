@@ -116,7 +116,7 @@ export const AuditForm = () => {
 
               <div className="space-y-4">
                 <a
-                  href="tel:+19512031294"
+                  href="tel:+19515280395"
                   className="flex items-start gap-4 p-4 rounded-xl bg-[#0c0d10] hover:bg-[#1a1d24] transition-colors group"
                 >
                   <span className="p-2.5 rounded-lg bg-[#1a1d24] text-emerald-400 flex-shrink-0">
@@ -127,7 +127,7 @@ export const AuditForm = () => {
                   <span className="min-w-0">
                     <span className="eyebrow block text-[10px]">Call or text</span>
                     <strong className="font-ui text-base text-[#f3f4f6] group-hover:text-emerald-400 transition-colors">
-                      (951) 203-1294
+                      (951) 528-0395
                     </strong>
                   </span>
                 </a>

@@ -18,10 +18,10 @@ export const Footer = () => {
           {/* Contact */}
           <div className="flex flex-col items-center md:items-end gap-3 text-sm text-slate-400 font-light">
             <a
-              href="tel:+19512031294"
+              href="tel:+19515280395"
               className="hover:text-[#f3f4f6] transition-colors"
             >
-              (951) 203-1294
+              (951) 528-0395
             </a>
             <a
               href="mailto:info@nextleaguemarketing.com"

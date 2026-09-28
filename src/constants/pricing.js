@@ -8,6 +8,10 @@
  * electrical,roofing}.html, which have no build step and so carry a hand copy.
  * If anything here changes, change those four pages in the same commit — they
  * must match this file exactly.
+ *
+ * 28 Sep 2026: two more places are built from this file, so there is nothing
+ * to hand-edit in either: the homepage's Offer structured data (Pricing.jsx)
+ * and /llms.txt (scripts/build-llms.mjs, run by `npm run build`).
  */
 
 export const PLANS = [

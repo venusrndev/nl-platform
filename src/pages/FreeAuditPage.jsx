@@ -8,12 +8,12 @@ export const FreeAuditPage = () => {
   return (
     <>
       <Helmet>
-        <title>Book Your Free Revenue Leakage Audit | Next League Marketing</title>
+        <title>Free Missed-Call Audit | Next League Marketing</title>
         <meta
           name="description"
           content="Find out how many calls rang out last month and how many messages never got an answer. No pitch, no obligation."
         />
-        <meta property="og:title" content="Book Your Free Revenue Leakage Audit | Next League Marketing" />
+        <meta property="og:title" content="Free Missed-Call Audit | Next League Marketing" />
         <meta
           property="og:description"
           content="Find out how many calls rang out last month and how many messages never got an answer. No pitch, no obligation."
@@ -23,7 +23,7 @@ export const FreeAuditPage = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Book Your Free Revenue Leakage Audit | Next League Marketing" />
+        <meta name="twitter:title" content="Free Missed-Call Audit | Next League Marketing" />
         <meta
           name="twitter:description"
           content="Find out how many calls rang out last month and how many messages never got an answer. No pitch, no obligation."

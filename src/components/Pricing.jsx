@@ -7,6 +7,33 @@ import { PLANS, PRICING_NOTES } from '../constants/pricing';
  * All plan copy and prices come from src/constants/pricing.js.
  */
 
+// 28 Sep 2026: the plans as structured data (Offer per plan, monthly), built
+// from pricing.js so prices still live in one place. Provider is the
+// LocalBusiness node in index.html.
+const PRICING_JSON_LD = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'AI phone answering and missed-call text-back',
+  provider: { '@id': 'https://nextleaguemarketing.com/#organization' },
+  offers: PLANS.map((plan) => {
+    const price = plan.price.replace('$', '');
+    return {
+      '@type': 'Offer',
+      name: plan.name,
+      description: [plan.tagline, plan.leadIn, plan.features.join('; ')].filter(Boolean).join(' '),
+      price,
+      priceCurrency: 'USD',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price,
+        priceCurrency: 'USD',
+        referenceQuantity: { '@type': 'QuantitativeValue', value: 1, unitCode: 'MON' },
+      },
+      url: 'https://nextleaguemarketing.com/#pricing',
+    };
+  }),
+}).replace(/</g, '\\u003c');
+
 const Tick = () => (
   <svg className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M5 12l5 5L20 7" />
@@ -16,6 +43,7 @@ const Tick = () => (
 export const Pricing = () => {
   return (
     <section id="pricing" className="scroll-mt-20 py-16 sm:py-20 bg-[#0c0d10] border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: PRICING_JSON_LD }} />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
           <span className="eyebrow mb-3">Pricing</span>

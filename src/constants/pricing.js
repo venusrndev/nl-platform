@@ -30,7 +30,7 @@ export const PLANS = [
       'Instant text and email reply to web forms',
       'One inbox for texts, email, Facebook and Instagram',
       'Online booking with automatic reminders',
-      'Texting registration filed for you',
+      'Business texting registration filed for you',
     ],
     cta: 'Book a 15-minute call',
   },
@@ -43,7 +43,7 @@ export const PLANS = [
     leadIn: 'Everything in Catch, plus:',
     features: [
       "An AI receptionist answers the calls you can't, 24/7",
-      'Books straight into your calendar',
+      'Books right onto your calendar',
       'A text summary of every call it takes',
       "Up to 500 AI minutes a month, about 150 calls. Past that, calls fall back to text-back, so there's no surprise bill.",
     ],

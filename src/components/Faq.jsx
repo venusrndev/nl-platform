@@ -15,7 +15,7 @@ const FAQS = [
   },
   {
     q: 'What if it says something wrong?',
-    a: "It only works from what you've approved: your services, hours, service area and calendar. It won't quote prices or promise anything outside that. Every call is recorded and summarized, so you can check any of them.",
+    a: "It only works from what you've approved: your services, hours, service area and calendar. It won't give estimates or promise anything outside that. Every call is recorded and summarized, so you can check any of them.",
   },
   {
     q: 'Does it work with ServiceTitan, Jobber or Housecall Pro?',

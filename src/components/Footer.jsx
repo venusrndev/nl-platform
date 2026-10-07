@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { BrandLockup } from './Logo';
 
 // 7 Oct 2026: one footer across the site. The static pages (trades,
 // /multi-site) carry the same footer from src/chrome/footer.html, built in by
 // scripts/build-static-chrome.mjs — change both together. The trade links
 // replace the static pages' old "Plumbing marketing"-style footer links.
+// 7 Oct 2026 (Andy): /text-us gets this footer too; the frozen copy of its
+// old footer is gone. Its body (consent paragraph, no forms) is untouched.
 const TRADE_LINKS = [
   { href: '/hvac', label: 'HVAC' },
   { href: '/plumbing', label: 'Plumbing' },
@@ -14,89 +16,7 @@ const TRADE_LINKS = [
   { href: '/multi-site', label: 'Multi-site' },
 ];
 
-// 7 Oct 2026 (site pass): "Don't change anything on /text-us below the
-// header." /text-us keeps the footer exactly as it was live before this pass
-// (main 08a3c28): no trade links, "Get a free audit". Do not edit; if Andy
-// releases /text-us, delete this and the check in Footer.
-const TextUsFooter = () => {
-  return (
-    <footer className="bg-[#0c0d10] py-10 border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 pb-10 border-b border-[color:var(--line,rgba(255,255,255,0.10))]">
-          {/* Brand */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
-            <BrandLockup size="large" />
-            <p className="eyebrow text-[#EAE4EA]/60">
-              Every call answered.
-            </p>
-          </div>
-
-          {/* Contact */}
-          <div className="flex flex-col items-center md:items-end gap-3 text-sm text-slate-400 font-light">
-            <a
-              href="tel:+19515280395"
-              className="hover:text-[#f3f4f6] transition-colors"
-            >
-              (951) 528-0395
-            </a>
-            <a
-              href="mailto:info@nextleaguemarketing.com"
-              className="hover:text-[#f3f4f6] transition-colors break-all"
-            >
-              info@nextleaguemarketing.com
-            </a>
-            <Link to="/text-us" className="hover:text-[#f3f4f6] transition-colors">
-              Text us
-            </Link>
-            <address className="not-italic text-center md:text-right leading-relaxed">
-              Next League Marketing<br />
-              4691 Cover St, Riverside, CA 92506
-            </address>
-          </div>
-        </div>
-
-        {/* Bottom row */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-light">
-          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-5 text-center sm:text-left">
-            <p>© {new Date().getFullYear()} Next League Marketing. All rights reserved.</p>
-            <div className="flex items-center gap-5">
-              <a
-                href="https://legal.nextleaguemarketing.com/privacy"
-                className="hover:text-[#f3f4f6] transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="https://legal.nextleaguemarketing.com/terms"
-                className="hover:text-[#f3f4f6] transition-colors"
-              >
-                Terms of Service
-              </a>
-            </div>
-          </div>
-          <a
-            href="/#audit"
-            onClick={(e) => {
-              const el = document.getElementById('audit');
-              if (!el) return;
-              e.preventDefault();
-              el.scrollIntoView({ behavior: 'smooth' });
-              window.history.pushState({}, '', '#audit');
-            }}
-            className="hover:text-[#f3f4f6] transition-colors uppercase tracking-[0.15em] font-semibold cursor-pointer"
-          >
-            Get a free audit
-          </a>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
 export const Footer = () => {
-  const { pathname } = useLocation();
-  if (pathname.replace(/\/+$/, '') === '/text-us') return <TextUsFooter />;
-
   return (
     <footer className="bg-[#0c0d10] py-10 border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 // Example thread for the hero visual. Copy is final (brief, 28 Sep 2026).
 // Placeholder until Andy swaps in a screen recording of the real system.
@@ -123,12 +124,12 @@ export const Hero = () => {
               so from 640px (sm) up to that the second one was clipped; now it
               wraps onto its own line instead. */}
           <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-4">
-            <a href="#audit" className="btn btn-lg btn-primary group">
+            <Link to="/free-audit" className="btn btn-lg btn-primary group">
               <span>Book a 15-minute call</span>
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </a>
+            </Link>
 
             <a href="tel:+19515280395" className="btn btn-lg btn-secondary">
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">

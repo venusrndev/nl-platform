@@ -39,6 +39,9 @@
   7 Oct 2026 (site pass, item 6): superseded in part. Every page now has the
   site header and footer, so this page shows "Text us" (nav and footer) and
   the phone number. Body copy is unchanged.
+  Item 7: both "Talk to us" buttons scroll to the booking calendar embedded at
+  the bottom of this page (#book, same widget as /free-audit) instead of
+  linking out to it.
 -->
 <style>
   /* Brand tokens come from /brand-tokens.css. Every var() below carries a
@@ -232,6 +235,12 @@
   .cta-final{background:var(--canvas-2, #14161b); border-top:1px solid var(--line, rgba(255,255,255,0.10));}
   .cta-final h2{font-size:clamp(32px,4.6vw,54px); font-weight:700; line-height:1.02; text-transform:uppercase; max-width:18ch;}
   .cta-final p{margin-top:18px; font-size:15px; line-height:1.75; color:var(--ink-dim, #9ca3af); max-width:560px;}
+  /* Booking calendar (7 Oct 2026, site pass item 7). The GHL widget is white,
+     so it sits in a light card, as on /free-audit. */
+  .booking-card{margin-top:40px; max-width:760px; padding:24px; background:var(--ink, #f3f4f6);
+    border-radius:var(--radius, 12px); overflow:hidden; scroll-margin-top:96px;}
+  @media(min-width:640px){.booking-card{padding:32px;}}
+  .booking-card iframe{display:block; width:100%; min-height:760px; border:none; overflow:hidden;}
 </style>
 </head>
 <body>
@@ -244,7 +253,7 @@
       <h1>One number that answers for every location.</h1>
       <p class="lede">Customers call about damage, billing, memberships and cancellations, and store staff are busy serving. We run one line that answers every call, logs it as a case with a reference number, and gets it to the person at your company who can fix it.</p>
       <div class="hero-actions">
-        <a class="btn-primary" href="https://api.leadconnectorhq.com/widget/booking/SIAoMrkYu4acIVNAuREd">Talk to us</a>
+        <a class="btn-primary" href="#book">Talk to us</a>
         <a class="btn-ghost" href="mailto:info@nextleaguemarketing.com">Email us</a>
       </div>
     </div>
@@ -316,9 +325,13 @@
     <h2>Tell us how calls are handled today.</h2>
     <p>Thirty minutes. We'll ask how calls and complaints reach you now, and tell you straight whether a line like this would help.</p>
     <div class="hero-actions">
-        <a class="btn-primary" href="https://api.leadconnectorhq.com/widget/booking/SIAoMrkYu4acIVNAuREd">Talk to us</a>
+        <a class="btn-primary" href="#book">Talk to us</a>
         <a class="btn-ghost" href="mailto:info@nextleaguemarketing.com">Email us</a>
       </div>
+    <div class="booking-card" id="book">
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/SIAoMrkYu4acIVNAuREd" id="SIAoMrkYu4acIVNAuREd_booking" title="Booking calendar" scrolling="no"></iframe>
+    </div>
+    <script src="https://api.nextleaguemarketing.com/js/form_embed.js"></script>
   </div>
 </section>
 

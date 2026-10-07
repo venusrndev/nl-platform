@@ -159,19 +159,12 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-          <a
-            href="/#audit"
-            onClick={(e) => {
-              const el = document.getElementById('audit');
-              if (!el) return;
-              e.preventDefault();
-              el.scrollIntoView({ behavior: 'smooth' });
-              window.history.pushState({}, '', '#audit');
-            }}
+          <Link
+            to="/free-audit"
             className="hover:text-[#f3f4f6] transition-colors uppercase tracking-[0.15em] font-semibold cursor-pointer"
           >
-            Get a free audit
-          </a>
+            Book a 15-minute call
+          </Link>
         </div>
       </div>
     </footer>

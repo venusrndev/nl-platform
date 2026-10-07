@@ -11,6 +11,8 @@ import { BrandLockup } from './Logo';
 // 7 Oct 2026: one header across the site. The static pages (trades,
 // /multi-site) carry the same header from src/chrome/header.html, built in by
 // scripts/build-static-chrome.mjs — change both together.
+// 7 Oct 2026: the audit button reads "Book a 15-minute call", the one label
+// for that action everywhere, and goes to /free-audit (site pass, item 7).
 const NAV_LINKS = [
   { href: '/#how', label: 'How it works' },
   { href: '/#pricing', label: 'Pricing' },
@@ -22,16 +24,6 @@ const PhoneIcon = ({ className = "w-3.5 h-3.5" }) => (
     <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
   </svg>
 );
-
-// Scroll to the audit form when it is on this page; otherwise let the
-// /#audit href do a normal navigation to the homepage section.
-const goToAudit = (e) => {
-  const el = document.getElementById('audit');
-  if (!el) return;
-  e.preventDefault();
-  el.scrollIntoView({ behavior: 'smooth' });
-  window.history.pushState({}, '', '#audit');
-};
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -97,9 +89,9 @@ export const Navbar = () => {
               <span>(951) 528-0395</span>
             </a>
 
-            <a href="/#audit" onClick={(e) => goToAudit(e)} className="btn btn-sm btn-primary">
-              Book a call
-            </a>
+            <Link to="/free-audit" className="btn btn-sm btn-primary">
+              Book a 15-minute call
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -174,16 +166,13 @@ export const Navbar = () => {
                 <PhoneIcon />
                 <span>(951) 528-0395</span>
               </a>
-              <a
-                href="/#audit"
-                onClick={(e) => {
-                  setMobileMenuOpen(false);
-                  goToAudit(e);
-                }}
+              <Link
+                to="/free-audit"
+                onClick={() => setMobileMenuOpen(false)}
                 className="btn btn-primary w-full"
               >
-                Book a call
-              </a>
+                Book a 15-minute call
+              </Link>
             </div>
           </div>
         )}

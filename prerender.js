@@ -8,11 +8,10 @@ const toAbsolute = (p) => path.resolve(__dirname, p);
 const template = fs.readFileSync(toAbsolute('dist/index.html'), 'utf-8');
 const { render } = await import('./dist-ssr/entry-server.js');
 
+// 7 Oct 2026 (site pass, item 4): /missed-call-text-back, /speed-to-lead and
+// /riverside are gone; vercel.json 301s them to /.
 const routesToPrerender = [
   '/',
-  '/missed-call-text-back',
-  '/speed-to-lead',
-  '/riverside',
   '/free-audit',
   '/text-us',
 ];

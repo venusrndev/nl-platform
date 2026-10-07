@@ -11,6 +11,36 @@
       ],
       "destination": "https://nextleaguemarketing.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/missed-call-text-back",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/missed-call-text-back/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/speed-to-lead",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/speed-to-lead/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/riverside",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/riverside/",
+      "destination": "/",
+      "statusCode": 301
     }
   ],
   "rewrites": [

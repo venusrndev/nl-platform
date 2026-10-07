@@ -9,11 +9,14 @@ const IFRAME_MAX_HEIGHT = 850;
 // 28 Sep 2026 (Andy, round 2): the GHL widget is white, so it sits in a light
 // card (--ink background, --radius corners, the site's panel padding) to read
 // as a deliberate panel rather than a hole in the page.
+// 7 Oct 2026 (site pass, item 7): /free-audit shows the calendar only
+// (showForm={false}) and keeps the "Rather just talk?" line. Every other page
+// that uses this section keeps the form and no calendar.
 const BOOKING_ID = 'SIAoMrkYu4acIVNAuREd';
 
 // 28 Sep 2026: headingAs lets a page whose first section this is make the
 // heading its h1 (same words, same classes). Everywhere else it stays an h2.
-export const AuditForm = ({ showBooking = false, ...props }) => {
+export const AuditForm = ({ showBooking = false, showForm = true, ...props }) => {
   const Heading = props.headingAs || 'h2';
   const iframeContainerRef = useRef(null);
 
@@ -92,40 +95,42 @@ export const AuditForm = ({ showBooking = false, ...props }) => {
             </div>
           )}
 
-          <div className="p-6 sm:p-10 bg-[#14161b] text-[#f3f4f6] overflow-hidden rounded-2xl">
-            <div
-              ref={iframeContainerRef}
-              className="w-full bg-[#14161b] overflow-hidden"
-              style={{ maxHeight: `${IFRAME_MAX_HEIGHT}px`, clipPath: 'inset(0 0 2px 0)' }}
-            >
-              <iframe
-                src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
-                style={{
-                  width: '100%',
-                  height: `${IFRAME_MAX_HEIGHT}px`,
-                  maxHeight: `${IFRAME_MAX_HEIGHT}px`,
-                  border: 'none',
-                  outline: 'none',
-                  backgroundColor: '#14161b',
-                  colorScheme: 'dark',
-                  display: 'block'
-                }}
-                id="inline-LxswiBnuIN5djToi78xC" 
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="nlm site form"
-                data-height="834"
-                data-layout-iframe-id="inline-LxswiBnuIN5djToi78xC"
-                data-form-id="LxswiBnuIN5djToi78xC"
-                title=""
-              />
+          {showForm && (
+            <div className="p-6 sm:p-10 bg-[#14161b] text-[#f3f4f6] overflow-hidden rounded-2xl">
+              <div
+                ref={iframeContainerRef}
+                className="w-full bg-[#14161b] overflow-hidden"
+                style={{ maxHeight: `${IFRAME_MAX_HEIGHT}px`, clipPath: 'inset(0 0 2px 0)' }}
+              >
+                <iframe
+                  src="https://api.nextleaguemarketing.com/widget/form/LxswiBnuIN5djToi78xC"
+                  style={{
+                    width: '100%',
+                    height: `${IFRAME_MAX_HEIGHT}px`,
+                    maxHeight: `${IFRAME_MAX_HEIGHT}px`,
+                    border: 'none',
+                    outline: 'none',
+                    backgroundColor: '#14161b',
+                    colorScheme: 'dark',
+                    display: 'block'
+                  }}
+                  id="inline-LxswiBnuIN5djToi78xC" 
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="nlm site form"
+                  data-height="834"
+                  data-layout-iframe-id="inline-LxswiBnuIN5djToi78xC"
+                  data-form-id="LxswiBnuIN5djToi78xC"
+                  title=""
+                />
+              </div>
             </div>
-          </div>
+          )}
 
           <p className="font-ui text-sm text-[color:var(--color-text-body,#cbd5e1)] font-light text-center mt-6 leading-relaxed">
             Rather just talk? Call or text{' '}

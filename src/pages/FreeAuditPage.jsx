@@ -34,7 +34,7 @@ export const FreeAuditPage = () => {
       </Helmet>
       <Navbar />
       <main className="pt-20">
-        <AuditForm showBooking headingAs="h1" />
+        <AuditForm showBooking showForm={false} headingAs="h1" />
       </main>
       <Footer />
     </>

@@ -9,11 +9,13 @@ const IFRAME_MAX_HEIGHT = 850;
 // 28 Sep 2026 (Andy, round 2): the GHL widget is white, so it sits in a light
 // card (--ink background, --radius corners, the site's panel padding) to read
 // as a deliberate panel rather than a hole in the page.
-const BOOKING_ID = 'SIAoMrkYu4acIVNAuREd';
+// 7 Oct 2026 (consistency brief, item 4): superseded. One booking mechanism:
+// /free-audit keeps the form only, so showBooking, BOOKING_ID and the
+// calendar embed are gone.
 
 // 28 Sep 2026: headingAs lets a page whose first section this is make the
 // heading its h1 (same words, same classes). Everywhere else it stays an h2.
-export const AuditForm = ({ showBooking = false, ...props }) => {
+export const AuditForm = (props) => {
   const Heading = props.headingAs || 'h2';
   const iframeContainerRef = useRef(null);
 
@@ -80,18 +82,6 @@ export const AuditForm = ({ showBooking = false, ...props }) => {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          {showBooking && (
-            <div className="mb-6 p-6 sm:p-8 bg-[color:var(--ink,#f3f4f6)] rounded-[var(--radius,12px)] overflow-hidden">
-              <iframe
-                src={`https://api.leadconnectorhq.com/widget/booking/${BOOKING_ID}`}
-                id={`${BOOKING_ID}_booking`}
-                title="Book a 15-minute call"
-                scrolling="no"
-                style={{ width: '100%', minHeight: '760px', border: 'none', overflow: 'hidden', display: 'block' }}
-              />
-            </div>
-          )}
-
           <div className="p-6 sm:p-10 bg-[#14161b] text-[#f3f4f6] overflow-hidden rounded-2xl">
             <div
               ref={iframeContainerRef}

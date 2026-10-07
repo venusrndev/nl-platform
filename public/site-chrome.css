@@ -1,0 +1,139 @@
+/*
+ * Site header and footer on the static pages (the four trades, /multi-site).
+ *
+ * 7 Oct 2026: one header and footer across the site. This reproduces
+ * src/components/Navbar.jsx and Footer.jsx (Tailwind) in plain CSS; the markup
+ * comes from src/chrome/*.html via scripts/build-static-chrome.mjs. Every rule
+ * is namespaced .nlm- so the pages' own styles can't reach in. Colours are the
+ * React build's values (Tailwind 4 slate is OKLCH). The header is sticky with
+ * the React header's scrolled look, so it never covers a static hero.
+ */
+.nlm-header, .nlm-footer {
+  font-family: var(--font-ui, 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  line-height: 1.5;
+}
+.nlm-header a, .nlm-footer a { color: inherit; text-decoration: none; transition: color .15s cubic-bezier(.4, 0, .2, 1); }
+
+.nlm-wrap { max-width: 80rem; margin: 0 auto; padding: 0 1rem; }
+@media (min-width: 640px) { .nlm-wrap { padding: 0 1.5rem; } }
+@media (min-width: 1024px) { .nlm-wrap { padding: 0 2rem; } }
+
+/* Header */
+.nlm-header {
+  position: sticky; top: 0; z-index: 50; padding: 14px 0;
+  background: rgba(12, 13, 16, .95);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line, rgba(255, 255, 255, 0.10));
+}
+.nlm-header-row { display: flex; align-items: center; justify-content: space-between; height: 48px; }
+
+.nlm-brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.nlm-brand-mark { display: block; width: 32px; height: 32px; object-fit: contain; flex-shrink: 0; }
+.nlm-brand-lg .nlm-brand-mark { width: 40px; height: 40px; }
+.nlm-brand-rule { display: block; width: 1px; height: 32px; background: rgba(234, 228, 234, .2); flex-shrink: 0; }
+.nlm-brand-text { display: flex; flex-direction: column; }
+.nlm-brand-name {
+  font-family: var(--font-headline, 'Playfair Display', Georgia, serif); font-weight: 700;
+  font-size: 1rem; line-height: 1; letter-spacing: .025em; text-transform: uppercase; color: #f3f4f6;
+}
+.nlm-brand-lg .nlm-brand-name { font-size: 1.125rem; }
+@media (min-width: 768px) {
+  .nlm-brand-name { font-size: 1.125rem; }
+  .nlm-brand-lg .nlm-brand-name { font-size: 1.25rem; }
+}
+.nlm-brand-sub {
+  margin-top: 4px; font-size: 10px; font-weight: 600; letter-spacing: .28em;
+  text-transform: uppercase; color: #9ca3af;
+}
+
+.nlm-nav {
+  display: none; align-items: center; gap: 32px; white-space: nowrap;
+  font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .15em;
+  color: var(--color-text-body, #cbd5e1);
+}
+.nlm-nav a:hover { color: #fff; }
+.nlm-ctas { display: none; align-items: center; gap: 12px; }
+.nlm-mobile { display: flex; align-items: center; gap: 8px; }
+@media (min-width: 1280px) {
+  .nlm-nav, .nlm-ctas { display: flex; }
+  .nlm-mobile, .nlm-drawer { display: none !important; }
+}
+
+.nlm-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .625rem;
+  height: 3rem; padding: 0 2rem; border-radius: 9999px;
+  font-family: var(--font-ui, 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  white-space: nowrap; cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.nlm-btn-sm { height: 2.5rem; padding: 0 1.25rem; font-size: 11px; gap: .5rem; }
+.nlm-btn-primary { background: var(--accent, #10b981); color: #07100c; border: 1px solid var(--accent, #10b981); }
+.nlm-btn-primary:hover { background: #34d399; border-color: #34d399; }
+.nlm-btn-secondary { background: transparent; color: var(--ink, #f3f4f6); border: 1px solid rgba(234, 228, 234, .25); }
+.nlm-btn-secondary:hover { border-color: rgba(234, 228, 234, .5); background: rgba(234, 228, 234, .05); }
+.nlm-header .nlm-btn-primary, .nlm-header .nlm-btn-primary:hover { color: #07100c; }
+
+.nlm-phone-icon { display: block; width: 14px; height: 14px; fill: currentColor; }
+.nlm-phone-icon-lg { width: 16px; height: 16px; }
+.nlm-icon-btn {
+  width: 44px; height: 44px; border-radius: 9999px; padding: 0; background: none; cursor: pointer;
+  border: 1px solid var(--color-border-strong, rgba(255, 255, 255, 0.20)); color: #f3f4f6;
+  display: flex; align-items: center; justify-content: center;
+}
+.nlm-menu-icon { display: block; width: 20px; height: 20px; }
+.nlm-menu-close, [aria-expanded="true"] .nlm-menu-open { display: none; }
+[aria-expanded="true"] .nlm-menu-close { display: inline; }
+
+.nlm-drawer {
+  margin-top: 16px; padding: 20px; border-radius: 16px;
+  background: var(--canvas-2, #14161b); border: 1px solid rgba(234, 228, 234, .1);
+}
+.nlm-drawer[hidden] { display: none; }
+.nlm-drawer > a {
+  display: flex; align-items: center; min-height: 44px; margin-top: 4px;
+  font-size: .875rem; line-height: 1.25rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .05em; color: #f3f4f6;
+}
+.nlm-drawer > a:first-child { margin-top: 0; }
+.nlm-drawer-ctas { margin-top: 4px; padding-top: 8px; display: flex; flex-direction: column; gap: 12px; }
+.nlm-drawer-ctas .nlm-btn { width: 100%; }
+
+/* Footer */
+.nlm-footer { background: #0c0d10; padding: 40px 0; border-top: 1px solid var(--line, rgba(255, 255, 255, 0.10)); }
+.nlm-footer-top {
+  display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+  gap: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--line, rgba(255, 255, 255, 0.10));
+}
+.nlm-footer-brand { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; }
+.nlm-tagline {
+  margin: 0; font-size: 11px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase;
+  color: rgba(234, 228, 234, .6);
+}
+.nlm-footer-trades, .nlm-footer-contact {
+  font-size: .875rem; line-height: calc(1.25 / .875); font-weight: 300; color: oklch(70.4% .04 256.788);
+}
+.nlm-footer-trades { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; }
+.nlm-footer-contact { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.nlm-footer-contact a:hover, .nlm-footer-trades a:hover, .nlm-footer-bottom a:hover { color: #f3f4f6; }
+.nlm-footer-contact address { font-style: normal; text-align: center; line-height: 1.625; }
+.nlm-break { word-break: break-all; }
+.nlm-footer-bottom {
+  padding-top: 32px; display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+  gap: 16px; font-size: 11px; font-weight: 300; color: oklch(55.4% .046 257.417);
+}
+.nlm-footer-bottom p { margin: 0; font-size: 11px; color: inherit; }
+.nlm-footer-legal { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.nlm-footer-legal-links { display: flex; align-items: center; gap: 20px; }
+.nlm-footer-cta { text-transform: uppercase; letter-spacing: .15em; font-weight: 600; cursor: pointer; }
+@media (min-width: 640px) {
+  .nlm-footer-bottom { flex-direction: row; }
+  .nlm-footer-legal { flex-direction: row; gap: 20px; text-align: left; }
+}
+@media (min-width: 768px) {
+  .nlm-footer-top { flex-direction: row; align-items: flex-start; }
+  .nlm-footer-brand { align-items: flex-start; text-align: left; }
+  .nlm-footer-trades { justify-content: flex-start; }
+  .nlm-footer-contact { align-items: flex-end; }
+  .nlm-footer-contact address { text-align: right; }
+}

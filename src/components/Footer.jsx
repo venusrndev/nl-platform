@@ -2,6 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BrandLockup } from './Logo';
 
+// 7 Oct 2026: one footer across the site. The static pages (trades,
+// /multi-site) carry the same footer from src/chrome/footer.html, built in by
+// scripts/build-static-chrome.mjs — change both together. The trade links
+// replace the static pages' old "Plumbing marketing"-style footer links.
+const TRADE_LINKS = [
+  { href: '/hvac', label: 'HVAC' },
+  { href: '/plumbing', label: 'Plumbing' },
+  { href: '/electrical', label: 'Electrical' },
+  { href: '/roofing', label: 'Roofing' },
+  { href: '/multi-site', label: 'Multi-site' },
+];
+
 export const Footer = () => {
   return (
     <footer className="bg-[#0c0d10] py-10 border-t border-[color:var(--line,rgba(255,255,255,0.10))]">
@@ -13,6 +25,13 @@ export const Footer = () => {
             <p className="eyebrow text-[#EAE4EA]/60">
               Every call answered.
             </p>
+            <nav aria-label="Trades" className="flex flex-wrap justify-center md:justify-start gap-x-5 gap-y-2 text-sm text-slate-400 font-light">
+              {TRADE_LINKS.map((link) => (
+                <a key={link.href} href={link.href} className="hover:text-[#f3f4f6] transition-colors">
+                  {link.label}
+                </a>
+              ))}
+            </nav>
           </div>
 
           {/* Contact */}

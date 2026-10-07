@@ -9,7 +9,7 @@
 
 @layer base {
   /* Brand tokens are defined once in /public/brand-tokens.css, which is
-     linked from index.html. Fallbacks below keep colour if that 404s. */
+     linked from index.html. Fallbacks below keep color if that 404s. */
 
   * {
     margin: 0;

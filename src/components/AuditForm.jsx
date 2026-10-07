@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 const IFRAME_MAX_HEIGHT = 850;
 
 // 28 Sep 2026 (Andy): /free-audit must let someone book a call, and it only
-// had the enquiry form. With showBooking, the GHL booking calendar renders
+// had the inquiry form. With showBooking, the GHL booking calendar renders
 // above the form. The form_embed.js this component already loads also sizes
 // booking iframes. Other pages that use this section don't get the calendar.
 // 28 Sep 2026 (Andy, round 2): the GHL widget is white, so it sits in a light

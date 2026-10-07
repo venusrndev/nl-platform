@@ -1,4 +1,4 @@
-// Site header and footer behaviour on the static pages (7 Oct 2026), matching
+// Site header and footer behavior on the static pages (7 Oct 2026), matching
 // src/components/Navbar.jsx: an in-page target scrolls smoothly, otherwise the
 // /#id link loads that homepage section; the menu button opens the drawer.
 (function () {

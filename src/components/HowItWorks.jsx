@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
  * "How it works." Layout reference: Zipline, Mobbin section 7b0ca7a7 —
  * three numbered cards in a row, a visual on top of each, text underneath.
  *
- * The visuals are placeholder phone frames labelled "Example". Their text is
+ * The visuals are placeholder phone frames labeled "Example". Their text is
  * taken only from the hero example thread in the brief (28 Sep 2026) and the
  * channel names in step 03's own copy — nothing else is invented. Andy will
  * swap in screen recordings of the real system.

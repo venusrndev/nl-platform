@@ -6,7 +6,7 @@ import React from 'react';
  * number large.
  *
  * The reference also shows message bubbles under the copy.
- * 28 Sep 2026 (Andy): one outgoing bubble, labelled "The text you'll get",
+ * 28 Sep 2026 (Andy): one outgoing bubble, labeled "The text you'll get",
  * carrying the exact text our number sends. No reply bubble. Line breaks are
  * the message's own.
  *

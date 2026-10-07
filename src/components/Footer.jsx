@@ -8,6 +8,28 @@ import { BrandLockup } from './Logo';
 // replace the static pages' old "Plumbing marketing"-style footer links.
 // 7 Oct 2026 (Andy): /text-us gets this footer too; the frozen copy of its
 // old footer is gone. Its body (consent paragraph, no forms) is untouched.
+// 7 Oct 2026: social profiles, as icon buttons at the end of the contact
+// column (same circle as the header's phone and menu buttons). Icons are
+// Feather's facebook and instagram glyphs (MIT), drawn inline.
+const SOCIAL_LINKS = [
+  {
+    href: 'https://www.facebook.com/profile.php?id=61592490820630',
+    label: 'Next League Marketing on Facebook',
+    icon: <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />,
+  },
+  {
+    href: 'https://www.instagram.com/nextleaguemarketing/',
+    label: 'Next League Marketing on Instagram',
+    icon: (
+      <>
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+      </>
+    ),
+  },
+];
+
 const TRADE_LINKS = [
   { href: '/hvac', label: 'HVAC' },
   { href: '/plumbing', label: 'Plumbing' },
@@ -57,6 +79,22 @@ export const Footer = () => {
               Next League Marketing<br />
               4691 Cover St, Riverside, CA 92506
             </address>
+            <div className="flex items-center gap-2">
+              {SOCIAL_LINKS.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.label}
+                  className="w-11 h-11 rounded-full border border-[color:var(--color-border-strong,rgba(255,255,255,0.20))] text-slate-400 hover:text-[#f3f4f6] hover:border-[rgba(234,228,234,0.5)] flex items-center justify-center transition-colors"
+                >
+                  <svg className="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    {link.icon}
+                  </svg>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 

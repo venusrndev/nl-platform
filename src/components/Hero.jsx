@@ -119,7 +119,10 @@ export const Hero = () => {
             number within seconds.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+          {/* 7 Oct 2026: sm:flex-wrap. Side by side the two buttons need ~691px,
+              so from 640px (sm) up to that the second one was clipped; now it
+              wraps onto its own line instead. */}
+          <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-4">
             <a href="#audit" className="btn btn-lg btn-primary group">
               <span>Book a 15-minute call</span>
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

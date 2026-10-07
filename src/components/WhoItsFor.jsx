@@ -12,7 +12,7 @@ const CARDS = [
   {
     label: 'Trades',
     headline: 'Home service contractors',
-    line: "HVAC, plumbing, electrical and roofing. You're on the job when the call comes in, and the next company on the list picks up.",
+    line: "HVAC, plumbing, electrical, and roofing. You're on the job when the call comes in, and the next company on the list picks up.",
     links: [
       { label: 'HVAC', href: '/hvac' },
       { label: 'Plumbing', href: '/plumbing' },
@@ -22,8 +22,8 @@ const CARDS = [
   },
   {
     label: 'Multi-site',
-    headline: 'Car wash, fuel and convenience operators',
-    line: 'Lots of locations and nobody free to answer the phone. One line that answers for every site, logs each call as a case and gets it to the right person.',
+    headline: 'Car wash, fuel, and convenience operators',
+    line: 'Lots of locations and nobody free to answer the phone. One line that answers for every site, logs each call as a case, and gets it to the right person.',
     links: [{ label: 'See how it works', href: '/multi-site' }],
   },
 ];

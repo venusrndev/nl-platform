@@ -10,7 +10,7 @@ export const A2PCompliance = () => {
           Business texting has to be registered. We handle it.
         </h2>
         <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed">
-          US carriers quietly block texts from business numbers that aren't
+          U.S. carriers quietly block texts from business numbers that aren't
           registered. There's no bounce-back; the messages just never arrive.
           Registration has to be filed under your own business details, so we
           file it with you during onboarding and don't turn anything on until

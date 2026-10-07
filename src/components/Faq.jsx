@@ -15,10 +15,10 @@ const FAQS = [
   },
   {
     q: 'What if it says something wrong?',
-    a: "It only works from what you've approved: your services, hours, service area and calendar. It won't give estimates or promise anything outside that. Every call is recorded and summarized, so you can check any of them.",
+    a: "It only works from what you've approved: your services, hours, service area, and calendar. It won't give estimates or promise anything outside that. Every call is recorded and summarized, so you can check any of them.",
   },
   {
-    q: 'Does it work with ServiceTitan, Jobber or Housecall Pro?',
+    q: 'Does it work with ServiceTitan, Jobber, or Housecall Pro?',
     a: 'Keep whatever you dispatch on. We sit in front of it, catch the calls that never make it that far, and hand you the booked job.',
   },
   {
@@ -31,7 +31,7 @@ const FAQS = [
   },
   {
     q: 'Why not just buy a cheap AI answering app?',
-    a: "You can, and some cost about $50 a month. Then you'd set it up, write the scripts, register your texting and fix it when it breaks. We do all of that for you, and there's a person in Riverside you can call.",
+    a: "You can, and some cost about $50 a month. Then you'd set it up, write the scripts, register your texting, and fix it when it breaks. We do all of that for you, and there's a person in Riverside you can call.",
   },
 ];
 

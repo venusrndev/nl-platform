@@ -28,7 +28,7 @@ export const PLANS = [
     features: [
       'Missed-call text-back from your business number',
       'Instant text and email reply to web forms',
-      'One inbox for texts, email, Facebook and Instagram',
+      'One inbox for texts, email, Facebook, and Instagram',
       'Online booking with automatic reminders',
       'Business texting registration filed for you',
     ],

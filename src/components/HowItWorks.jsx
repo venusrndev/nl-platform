@@ -72,7 +72,7 @@ const STEPS = [
   {
     num: '01',
     title: 'The call gets answered.',
-    body: "If you don't get to it, the AI receptionist answers in your business's name, finds out what they need and offers a time from your real calendar.",
+    body: "If you don't get to it, the AI receptionist answers in your business's name, finds out what they need, and offers a time from your real calendar.",
     tag: 'Answer plan',
     Visual: CallVisual,
   },
@@ -85,7 +85,7 @@ const STEPS = [
   {
     num: '03',
     title: 'It all lands in one place.',
-    body: 'Calls, texts, web forms, Facebook and Instagram messages arrive in one inbox on your phone, each with a note of what they want.',
+    body: 'Calls, texts, web forms, Facebook, and Instagram messages arrive in one inbox on your phone, each with a note of what they want.',
     Visual: InboxVisual,
   },
 ];

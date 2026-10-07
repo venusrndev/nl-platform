@@ -28,7 +28,7 @@ export const HomePage = () => {
         <meta name="description" content={DESCRIPTION} />
         <meta
           name="keywords"
-          content="HVAC marketing Riverside, plumber marketing Riverside CA, contractor lead generation, missed call text back, GoHighLevel for contractors, A2P compliance contractors, Riverside CA"
+          content="missed call text back, GoHighLevel for contractors, A2P compliance contractors, Riverside CA"
         />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />

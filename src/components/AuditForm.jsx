@@ -77,7 +77,7 @@ export const AuditForm = ({ showBooking = false, showForm = true, ...props }) =>
           </Heading>
           <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed text-center w-full mx-auto">
             We'll go through it together: your call log, your texts, your inbox.
-            How many calls rang out, and how many messages never got an answer.
+            How many calls went to voicemail, and how many messages never got an answer.
             No contract, no obligation.
           </p>
         </div>

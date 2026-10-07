@@ -14,7 +14,7 @@ export const FounderLine = () => {
           phone ring when both hands are full. We're in Riverside, and we'll come
           to you. You get a person, not a ticket queue: Cody sits down with you,
           goes through your call log and texts, and answers his own phone when
-          you ring.
+          you call.
         </p>
       </div>
     </section>

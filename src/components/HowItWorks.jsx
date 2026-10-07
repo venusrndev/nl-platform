@@ -94,7 +94,7 @@ const STEPS = [
 // 28 Sep 2026: step 2 text changed per brief; the 0:00 / 0:15 timestamps
 // were dropped so the demo makes no timing claim beyond "within seconds".
 const DEMO_STEPS = [
-  { title: 'The call rings out', detail: "You're on a job. Nobody picks up." },
+  { title: 'The call goes to voicemail', detail: "You're on a job. Nobody picks up." },
   { title: 'They get a text back within seconds.' },
   { title: 'The job is on the calendar', detail: 'They reply, pick a time, and you never touched your phone.' },
 ];

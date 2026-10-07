@@ -55,7 +55,7 @@ export const PLANS = [
 export const PRICING_NOTES = [
   {
     label: 'Guarantee',
-    text: "Run it for a month. If it hasn't caught you a job you'd otherwise have missed, cancel. You've paid for one month and that's all.",
+    text: "Run it for a month. If it hasn't landed you a job you would have missed, cancel. You're out one month, and that's it.",
   },
   {
     label: 'Timing',
@@ -64,9 +64,11 @@ export const PRICING_NOTES = [
   // 28 Sep 2026 (Andy): this is the one place "quote follow-ups" and
   // "seasonal campaigns" may appear, because it says they are built to order.
   // It is exempt from the banned-terms check; everywhere else stays at zero.
+  // 7 Oct 2026 (language pass): now "estimate follow-up" and "multiple
+  // locations"; the exemption carries over to the new wording.
   {
     label: 'Custom',
-    text: 'Need quote follow-ups, seasonal campaigns or several locations? We build those to order.',
+    text: 'Need estimate follow-up, seasonal campaigns, or multiple locations? We build those to order.',
     link: 'Talk to us →',
   },
 ];

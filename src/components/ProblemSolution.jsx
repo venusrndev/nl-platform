@@ -5,7 +5,7 @@ import VideoContainer from './VideoContainer';
 // 28 Sep 2026: was a Right now / With us toggle showing one column at a time;
 // now both columns side by side, matching the table as briefed.
 const ROWS = [
-  ['A call comes in while you\'re on a job', 'Rings out', 'Answered by AI, or a text within seconds'],
+  ['A call comes in while you\'re on a job', 'Goes to voicemail', 'Answered by AI, or a text within seconds'],
   ['A web form comes in at 8pm', 'Seen tomorrow', 'Text and email back in under a minute'],
   ['Typical first reply', 'Hours', 'Under a minute, day or night'],
 ];

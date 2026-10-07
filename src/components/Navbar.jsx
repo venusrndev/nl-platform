@@ -11,6 +11,8 @@ import { BrandLockup } from './Logo';
 // 7 Oct 2026: one header across the site. The static pages (trades,
 // /multi-site) carry the same header from src/chrome/header.html, built in by
 // scripts/build-static-chrome.mjs — change both together.
+// 7 Oct 2026: the audit button reads "Book a 15-minute call", the one label
+// for that action everywhere (consistency brief, item 3).
 const NAV_LINKS = [
   { href: '/#how', label: 'How it works' },
   { href: '/#pricing', label: 'Pricing' },
@@ -98,7 +100,7 @@ export const Navbar = () => {
             </a>
 
             <a href="/#audit" onClick={(e) => goToAudit(e)} className="btn btn-sm btn-primary">
-              Book a call
+              Book a 15-minute call
             </a>
           </div>
 
@@ -182,7 +184,7 @@ export const Navbar = () => {
                 }}
                 className="btn btn-primary w-full"
               >
-                Book a call
+                Book a 15-minute call
               </a>
             </div>
           </div>

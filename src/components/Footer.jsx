@@ -88,7 +88,7 @@ export const Footer = () => {
             }}
             className="hover:text-[#f3f4f6] transition-colors uppercase tracking-[0.15em] font-semibold cursor-pointer"
           >
-            Get a free audit
+            Book a 15-minute call
           </a>
         </div>
       </div>

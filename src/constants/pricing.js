@@ -12,6 +12,9 @@
  * 28 Sep 2026: two more places are built from this file, so there is nothing
  * to hand-edit in either: the homepage's Offer structured data (Pricing.jsx)
  * and /llms.txt (scripts/build-llms.mjs, run by `npm run build`).
+ *
+ * 7 Oct 2026: the plan buttons read "Book a 15-minute call", the one label for
+ * the audit action everywhere (consistency brief, item 3). Trade pages match.
  */
 
 export const PLANS = [
@@ -29,7 +32,7 @@ export const PLANS = [
       'Online booking with automatic reminders',
       'Texting registration filed for you',
     ],
-    cta: 'Book a call',
+    cta: 'Book a 15-minute call',
   },
   {
     id: 'answer',
@@ -44,7 +47,7 @@ export const PLANS = [
       'A text summary of every call it takes',
       "Up to 500 AI minutes a month, about 150 calls. Past that, calls fall back to text-back, so there's no surprise bill.",
     ],
-    cta: 'Book a call',
+    cta: 'Book a 15-minute call',
   },
 ];
 

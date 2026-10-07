@@ -6,7 +6,7 @@ import React from 'react';
  * number large.
  *
  * The reference also shows message bubbles under the copy.
- * 28 Sep 2026 (Andy): one outgoing bubble, labelled "The text you'll get",
+ * 28 Sep 2026 (Andy): one outgoing bubble, labeled "The text you'll get",
  * carrying the exact text our number sends. No reply bubble. Line breaks are
  * the message's own.
  *
@@ -29,9 +29,9 @@ export const TryIt = () => {
             Call us and let it ring.
           </h2>
           <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed max-w-2xl">
-            Call (951) 528-0395 and hang up once it's rung out. A text from our
-            number lands on your phone within seconds, the same text your
-            customers would get. If Cody's free, he'll pick up instead.
+            Call (951) 528-0395 and hang up when it goes to voicemail. Within
+            seconds, a text from our number lands on your phone—the same text
+            your customers would get. If Cody's free, he'll pick up instead.
           </p>
 
           <figure className="mt-8 max-w-md">

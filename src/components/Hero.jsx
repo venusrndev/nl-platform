@@ -114,10 +114,10 @@ export const Hero = () => {
           </h1>
 
           <p className="font-ui text-base sm:text-xl font-light text-[color:var(--color-text-body,#cbd5e1)] max-w-2xl mb-10 leading-relaxed">
-            You're up a ladder, under a sink or halfway through an install, and
-            the phone rings. Our AI receptionist picks up, books the job and texts
-            you the details. If they hang up first, they get a text from your
-            number within seconds.
+            You're on a ladder, under a sink, or halfway through an install,
+            and the phone rings. Our AI receptionist picks up, books the job,
+            and texts you the details. If they hang up first, they get a text
+            from your number within seconds.
           </p>
 
           {/* 7 Oct 2026: sm:flex-wrap. Side by side the two buttons need ~691px,

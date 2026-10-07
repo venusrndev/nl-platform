@@ -47,12 +47,9 @@ export const Pricing = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
           <span className="eyebrow mb-3">Pricing</span>
-          <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center mb-6">
-            Two plans. No setup fee. No contract.
+          <h2 className="font-headline text-4xl sm:text-6xl font-black uppercase text-[#f3f4f6] tracking-tight leading-[1.05] text-center">
+            No setup fee. One job pays for it.
           </h2>
-          <p className="font-ui text-base sm:text-lg text-[color:var(--color-text-body,#cbd5e1)] font-light leading-relaxed">
-            Priced against one job, not your revenue.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

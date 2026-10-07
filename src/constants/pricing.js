@@ -28,9 +28,9 @@ export const PLANS = [
     features: [
       'Missed-call text-back from your business number',
       'Instant text and email reply to web forms',
-      'One inbox for texts, email, Facebook and Instagram',
+      'One inbox for texts, email, Facebook, and Instagram',
       'Online booking with automatic reminders',
-      'Texting registration filed for you',
+      'Business texting registration filed for you',
     ],
     cta: 'Book a 15-minute call',
   },
@@ -43,7 +43,7 @@ export const PLANS = [
     leadIn: 'Everything in Catch, plus:',
     features: [
       "An AI receptionist answers the calls you can't, 24/7",
-      'Books straight into your calendar',
+      'Books right onto your calendar',
       'A text summary of every call it takes',
       "Up to 500 AI minutes a month, about 150 calls. Past that, calls fall back to text-back, so there's no surprise bill.",
     ],
@@ -55,7 +55,7 @@ export const PLANS = [
 export const PRICING_NOTES = [
   {
     label: 'Guarantee',
-    text: "Run it for a month. If it hasn't caught you a job you'd otherwise have missed, cancel. You've paid for one month and that's all.",
+    text: "Run it for a month. If it hasn't landed you a job you would have missed, cancel. You're out one month, and that's it.",
   },
   {
     label: 'Timing',
@@ -64,9 +64,11 @@ export const PRICING_NOTES = [
   // 28 Sep 2026 (Andy): this is the one place "quote follow-ups" and
   // "seasonal campaigns" may appear, because it says they are built to order.
   // It is exempt from the banned-terms check; everywhere else stays at zero.
+  // 7 Oct 2026 (language pass): now "estimate follow-up" and "multiple
+  // locations"; the exemption carries over to the new wording.
   {
     label: 'Custom',
-    text: 'Need quote follow-ups, seasonal campaigns or several locations? We build those to order.',
+    text: 'Need estimate follow-up, seasonal campaigns, or multiple locations? We build those to order.',
     link: 'Talk to us →',
   },
 ];

@@ -12,12 +12,12 @@ export const FreeAuditPage = () => {
         <link rel="canonical" href="https://nextleaguemarketing.com/free-audit" />
         <meta
           name="description"
-          content="Find out how many calls rang out last month and how many messages never got an answer. No pitch, no obligation."
+          content="Find out how many calls went to voicemail, and how many messages never got an answer. No pitch, no obligation."
         />
         <meta property="og:title" content="Free Missed-Call Audit | Next League Marketing" />
         <meta
           property="og:description"
-          content="Find out how many calls rang out last month and how many messages never got an answer. No pitch, no obligation."
+          content="Find out how many calls went to voicemail, and how many messages never got an answer. No pitch, no obligation."
         />
         <meta property="og:image" content="https://nextleaguemarketing.com/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
@@ -28,7 +28,7 @@ export const FreeAuditPage = () => {
         <meta name="twitter:title" content="Free Missed-Call Audit | Next League Marketing" />
         <meta
           name="twitter:description"
-          content="Find out how many calls rang out last month and how many messages never got an answer. No pitch, no obligation."
+          content="Find out how many calls went to voicemail, and how many messages never got an answer. No pitch, no obligation."
         />
         <meta name="twitter:image" content="https://nextleaguemarketing.com/og-image.jpg" />
       </Helmet>

@@ -1,7 +1,7 @@
 /*
  * Next League Marketing — brand tokens.
  *
- * SINGLE SOURCE OF TRUTH for every brand colour, font stack and radius.
+ * SINGLE SOURCE OF TRUTH for every brand color, font stack and radius.
  * If a brand value needs changing, it changes here and nowhere else.
  *
  * Consumed by:
@@ -11,7 +11,7 @@
  * The trade pages are hand-written HTML with no build step behind them, so
  * every var() that reads a token below MUST carry a literal fallback —
  * var(--accent, #10b981), never bare var(--accent). If this file 404s or is
- * renamed, the pages still render in full brand colour.
+ * renamed, the pages still render in full brand color.
  */
 
 :root {

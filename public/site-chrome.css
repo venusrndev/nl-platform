@@ -4,7 +4,7 @@
  * 7 Oct 2026: one header and footer across the site. This reproduces
  * src/components/Navbar.jsx and Footer.jsx (Tailwind) in plain CSS; the markup
  * comes from src/chrome/*.html via scripts/build-static-chrome.mjs. Every rule
- * is namespaced .nlm- so the pages' own styles can't reach in. Colours are the
+ * is namespaced .nlm- so the pages' own styles can't reach in. Colors are the
  * React build's values (Tailwind 4 slate is OKLCH). The header is sticky with
  * the React header's scrolled look, so it never covers a static hero.
  */

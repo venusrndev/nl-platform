@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
  * "How it works." Layout reference: Zipline, Mobbin section 7b0ca7a7 —
  * three numbered cards in a row, a visual on top of each, text underneath.
  *
- * The visuals are placeholder phone frames labelled "Example". Their text is
+ * The visuals are placeholder phone frames labeled "Example". Their text is
  * taken only from the hero example thread in the brief (28 Sep 2026) and the
  * channel names in step 03's own copy — nothing else is invented. Andy will
  * swap in screen recordings of the real system.
@@ -72,7 +72,7 @@ const STEPS = [
   {
     num: '01',
     title: 'The call gets answered.',
-    body: "If you don't get to it, the AI receptionist answers in your business's name, finds out what they need and offers a time from your real calendar.",
+    body: "If you don't get to it, the AI receptionist answers in your business's name, finds out what they need, and offers a time from your real calendar.",
     tag: 'Answer plan',
     Visual: CallVisual,
   },
@@ -85,7 +85,7 @@ const STEPS = [
   {
     num: '03',
     title: 'It all lands in one place.',
-    body: 'Calls, texts, web forms, Facebook and Instagram messages arrive in one inbox on your phone, each with a note of what they want.',
+    body: 'Calls, texts, web forms, Facebook, and Instagram messages arrive in one inbox on your phone, each with a note of what they want.',
     Visual: InboxVisual,
   },
 ];
@@ -94,7 +94,7 @@ const STEPS = [
 // 28 Sep 2026: step 2 text changed per brief; the 0:00 / 0:15 timestamps
 // were dropped so the demo makes no timing claim beyond "within seconds".
 const DEMO_STEPS = [
-  { title: 'The call rings out', detail: "You're on a job. Nobody picks up." },
+  { title: 'The call goes to voicemail', detail: "You're on a job. Nobody picks up." },
   { title: 'They get a text back within seconds.' },
   { title: 'The job is on the calendar', detail: 'They reply, pick a time, and you never touched your phone.' },
 ];

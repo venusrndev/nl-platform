@@ -17,7 +17,7 @@ import Footer from '../components/Footer';
 // in its static <head>, which is what crawlers see — keep the two in step.
 const TITLE = 'Every Call Answered | AI Phone Answering & Missed-Call Text-Back | Riverside, CA';
 const DESCRIPTION =
-  "When you can't pick up, we answer. AI phone answering and missed-call text-back for HVAC, plumbing, electrical and roofing contractors, set up and run for you from Riverside, CA. No setup fee, no contract.";
+  "When you can't pick up, we answer. AI phone answering and missed-call text-back for HVAC, plumbing, electrical, and roofing contractors, set up and run for you from Riverside, CA. No setup fee, no contract.";
 
 export const HomePage = () => {
   return (

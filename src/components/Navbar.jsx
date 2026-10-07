@@ -8,6 +8,9 @@ import { BrandLockup } from './Logo';
 // In-page anchors scroll on the homepage and
 // fall back to a full load of /#id elsewhere. /multi-site is static HTML, so it
 // is a plain full-page link; /text-us is a React route.
+// 7 Oct 2026: one header across the site. The static pages (trades,
+// /multi-site) carry the same header from src/chrome/header.html, built in by
+// scripts/build-static-chrome.mjs — change both together.
 const NAV_LINKS = [
   { href: '/#how', label: 'How it works' },
   { href: '/#pricing', label: 'Pricing' },
